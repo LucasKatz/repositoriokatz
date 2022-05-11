@@ -1,0 +1,188 @@
+*{ margin: 0%;
+   padding: 0%;
+    box-sizing: border-box; }
+
+header { background-image: url(../img/fondo9.png);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+ 
+    }
+
+
+
+#logo {
+    display: inline;
+    margin-left: 490px;
+    height: 250px;
+}
+
+
+.whatsapp1{
+    font-size: large;
+    font-weight: bold;
+    width: 240px;
+    height: 25px;
+  
+    }
+
+.whatsapp2 {
+ 
+    display: inline;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 35px;
+    height: 20px;
+  
+    }
+
+nav {
+    margin-top: 140px;
+    list-style-type: none; 
+    font-size: larger;
+    width: 1200px;
+    height: 50px;
+   
+    }
+
+     
+nav a:hover {
+    color:white;
+}
+
+ul {display: flex;
+    flex-direction: row; 
+    justify-content: flex-start;}
+
+nav li {display: inline;
+    justify-content:  left;
+    font-size: larger;
+    margin-top: 3%;
+   }
+
+.info {
+    background-color: aquamarine;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.alifer {
+        margin-left: 400px;
+        margin-right: 400px;
+        max-width: 450px;
+        max-height: 450px;
+    }
+
+h2 { font-size: 32px;
+    font-style: italic;
+    text-align: center;}
+
+.chefs {
+    font-style: oblique;
+    text-align: center;
+    font-size: larger;
+    padding: 2%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.nosotras { margin-top: 10px;}
+
+#names {
+    font-size: 40px;
+}
+
+.desafio1 {
+    font-style: oblique;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(23, 104, 134, 0.463);
+    }
+
+.festivo { background-color: rgb(132, 243, 219);
+           text-align: center;
+           height: 100% ;
+           width: 100%;
+          
+         }
+
+.footerInfo {background-color: rgb(42, 185, 185);
+ 
+    margin: none;
+    font-size: 20px;
+    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+
+
+.redes { font-size: larger;
+    }
+.footerizq {display: flex;}
+.listafooter {  display: inline-block;}
+
+.Instagram {list-style: none;}
+    
+.Facebook { list-style: none; 
+    margin-top: 20px;
+     }
+
+.map { width: 300px;
+    height: 300px;
+    margin-left: 500px;
+ }
+
+ .n1 {margin-top: 10px;}
+ .n2 { margin-top: 10px;}
+
+.galery{ background-color: aquamarine;  }
+
+.tabla {margin-left: 20%;}
+
+.productosFestivos {background-color: aquamarine;}
+     
+.serviciosPersonalizados { text-align: center;
+    font-size: 40px;
+    font-weight: bold;}
+
+.volanta {text-align: center;
+    font-style: normal;
+    font-size: larger;
+     }
+
+.torta { display: flex;
+        display: inline;
+    margin-left: 30%;
+}
+
+.huevo {display: flex;
+    display: inline;
+margin-left: 45%; }
+
+.pan{ display: flex;
+    display: inline-block;
+margin-left: 45%;}
+
+.torta{ display: inline;
+}
+
+.pan1 { display:inline;
+   justify-content: space-evenly;}
+
+.servicio { text-align: center;}
+
+.catering1 {background-color: aquamarine;}
+
+.video { display: flex;
+    display: inline-block;
+margin-left: 30%; }
+
+.formulario {background-color: aquamarine;}
+
+label { justify-content: left;}
+
+
+form{text-align: center;}
+
+
+
