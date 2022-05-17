@@ -2,62 +2,43 @@
    padding: 0%;
     box-sizing: border-box; }
 
-header { background-image: url(../img/fondo9.png);
+header{background-image: url(../img/fondo9.png);
     background-size: cover;
     background-position: center;
-    height: 500px;
- 
-    }
+    height: 150px;}
 
+.banner{display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:repeat(2,1fr);
+    grid-template-areas:
+    "logo  .   .  ."
+    "logo nav nav .";}
 
-
-#logo {
+#logo {grid-area: logo;
     display: inline;
-    margin-left: 490px;
-    height: 250px;
-}
-
-
-.whatsapp1{
-    font-size: large;
-    font-weight: bold;
-    width: 240px;
-    height: 25px;
-  
-    }
-
-.whatsapp2 {
- 
-    display: inline;
-    font-size: large;
-    font-weight: bold;
-    margin-top: 35px;
-    height: 20px;
-  
-    }
+    height: 150px;}
 
 nav {
-    margin-top: 140px;
-    list-style-type: none; 
+    grid-area: nav;
+    list-style-type: none;
     font-size: larger;
-    width: 1200px;
-    height: 50px;
-   
+    align-items: flex-end;
+    justify-content: center;
     }
 
-     
+
 nav a:hover {
     color:white;
 }
 
 ul {display: flex;
-    flex-direction: row; 
-    justify-content: flex-start;}
+    flex-direction: row;
+    justify-content:center;
+   }
 
 nav li {display: inline;
-    justify-content:  left;
     font-size: larger;
-    margin-top: 3%;
+    margin: 4px;
    }
 
 .info {
@@ -67,107 +48,172 @@ nav li {display: inline;
     background-size: cover;
     }
 
-.alifer {
-        margin-left: 400px;
-        margin-right: 400px;
-        max-width: 450px;
-        max-height: 450px;
+.data{display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(5, 110px);
+grid-template-areas:
+". subtitulo subtitulo  ."
+". img          img     . "
+".  img         img     . "
+". names      names     ."
+" chefs chefs chefs chefs ";
+justify-items: center;
+align-items: center;
+}
+
+.subtitulo {grid-area: subtitulo;}
+
+.alifer2 {grid-area: img;
+        margin-left: 70px;
+        max-width: 500px;
+        max-height: 500px;
+justify-content: center;
     }
+
+.names{grid-area: names;
+    justify-content: flex-end;
+    margin-top: 50px;}
 
 h2 { font-size: 32px;
     font-style: italic;
     text-align: center;}
 
-.chefs {
+.chefs {grid-area: chefs;
     font-style: oblique;
     text-align: center;
     font-size: larger;
     padding: 2%;
     background-repeat: no-repeat;
-    background-size: cover;
-    }
+    background-size: cover;}
 
-.nosotras { margin-top: 10px;}
 
-#names {
-    font-size: 40px;
-}
 
-.desafio1 {
+.desafio1 { display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-area:
+". slogan slogan slogan ."
+"nos nos nos nos nos";
     font-style: oblique;
     text-align: center;
     padding: 20px;
-    background-color: rgba(23, 104, 134, 0.463);
-    }
+    background-color: rgba(23, 104, 134, 0.463);}
 
-.festivo { background-color: rgb(132, 243, 219);
-           text-align: center;
-           height: 100% ;
-           width: 100%;
-          
-         }
+.slogan {grid-area: slogan;}
 
-.footerInfo {background-color: rgb(42, 185, 185);
- 
+.nos { margin-top: 40px;
+        grid-area: nos;}
+
+.festivo {display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(2, 1fr);
+background-color: rgb(132, 243, 219);
+text-align: center;
+height: 100% ;
+width: 100%;
+grid-template-areas:
+". calendar calendar calendar ."
+". calendar calendar calendar ." ;}
+
+.calendar{grid-area: calendar;}
+
+.footerInfo {
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    background-color: rgb(42, 185, 185);
+    grid-template-areas:
+    "izq cen ."
+    "izq cen .";
+
     margin: none;
     font-size: 20px;
     font-style: normal;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
 
+.redes { font-size: larger;}
 
+.footerizq {display: flex;
+    grid-area: izq;
+}
 
-.redes { font-size: larger;
-    }
-.footerizq {display: flex;}
-.listafooter {  display: inline-block;}
 
 .Instagram {list-style: none;}
-    
-.Facebook { list-style: none; 
-    margin-top: 20px;
-     }
 
+.Facebook { list-style: none;
+    margin-top: 20px;}
+
+.cen {    grid-area: cen;
+    justify-content: center;}
 .map { width: 300px;
     height: 300px;
-    margin-left: 500px;
- }
+}
 
- .n1 {margin-top: 10px;}
- .n2 { margin-top: 10px;}
+ .n1 {margin-top: 10px;
+    list-style: none;}
+ .n2 { margin-top: 10px;
+    list-style: none;}
 
-.galery{ background-color: aquamarine;  }
+.galeria{ background-color: aquamarine;
+display: grid;
+justify-content: center;
+align-content: center;
+grid-gap: 5px;
+padding-bottom: 25px;
+grid-template-columns: repeat(5, 190px);
+grid-template-rows: repeat(4, 190px);
+grid-template-areas:
+"name       name    name         name       name"
+"brownies1 cookies1 panificados1 facturas1 salado1"
+"brownies2 cookies2 panificados2 facturas2 salado2"
+"brownies3 cookies3 panificados3 facturas3 salado3";}
 
-.tabla {margin-left: 20%;}
+.galeria p {font-size:xx-large;
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: center;
+}
+
+.brownies1{grid-area: brownies1; border-style: solid; border-width: 5px; border-color: blue; }
+.brownies2 {grid-area: brownies2;border-style: solid; border-width: 5px; border-color: blue;}
+.brownies3{grid-area: brownies3;border-style: solid; border-width: 5px; border-color: blue;}
+.cookies1{grid-area: cookies1;border-style: solid; border-width: 5px; border-color: blue;}
+.cookies2 {grid-area: cookies2;border-style: solid; border-width: 5px; border-color: blue;}
+.cookies3{grid-area: cookies3;border-style: solid; border-width: 5px; border-color: blue;}
+.panificados1{grid-area: panificados1;border-style: solid; border-width: 5px; border-color: blue;}
+.panificados2{grid-area: panificados2;border-style: solid; border-width: 5px; border-color: blue;}
+.panificados3{grid-area: panificados3;border-style: solid; border-width: 5px; border-color: blue;}
+.facturas1{grid-area: facturas1;border-style: solid; border-width: 5px; border-color: blue;}
+.facturas2{grid-area: facturas2;border-style: solid; border-width: 5px; border-color: blue;}
+.facturas3{grid-area: facturas3;border-style: solid; border-width: 5px; border-color: blue;}
+.salado1{grid-area: salado1;border-style: solid; border-width: 5px; border-color: blue;}
+.salado2{grid-area: salado2;border-style: solid; border-width: 5px; border-color: blue;}
+.salado3{grid-area: salado3;border-style: solid; border-width: 5px; border-color: blue;}
 
 .productosFestivos {background-color: aquamarine;}
-     
+
 .serviciosPersonalizados { text-align: center;
     font-size: 40px;
     font-weight: bold;}
 
 .volanta {text-align: center;
     font-style: normal;
-    font-size: larger;
-     }
+    font-size: larger;}
 
-.torta { display: flex;
-        display: inline;
-    margin-left: 30%;
-}
+.fotosTortas {display: flex;
+justify-content: space-between;
+flex-wrap: wrap;}
 
-.huevo {display: flex;
-    display: inline;
-margin-left: 45%; }
+.pascuas { display: flex;
+    justify-content: space-between;
+flex-wrap: wrap;}
 
-.pan{ display: flex;
-    display: inline-block;
-margin-left: 45%;}
+.panDulce1{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;}
 
-.torta{ display: inline;
-}
-
-.pan1 { display:inline;
-   justify-content: space-evenly;}
+.torta{ display: inline;}
 
 .servicio { text-align: center;}
 
@@ -177,12 +223,75 @@ margin-left: 45%;}
     display: inline-block;
 margin-left: 30%; }
 
-.formulario {background-color: aquamarine;}
+.flex__container {
+    display: flex;
+align-items: center;
+flex-wrap: wrap;
+justify-content: center;
+background-color: aqua;}
 
-label { justify-content: left;}
+.mensaje {background-color: aqua;}
 
+.form { width: 100%;
+    height: 400px;
+    flex: 1;
+    text-align: right;}
 
-form{text-align: center;}
+.form__input {width: 70%;
+    margin: 7px;
+    padding: 7px;
+    border: none;
+    border: 5px solid #468bb3;
+    background: transparent;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;}
 
+#button {width: 160px;}
 
+.form__input:focus {
+    background-color: #61bdf2;
+    outline: none;}
 
+textarea {min-height: 100px;
+resize: none;}
+
+.imagenEmail {width: 400px;
+    height: 400px;
+    flex: 1;
+padding: 10px;}
+
+@media screen and (max-width: 380px)
+ {
+header {background-image: none;
+background-color: aqua;}
+#logo { width: 50px;
+height: 50px;}
+nav { display: flex;}
+nav a:hover {color:white;}
+.pages {display: inline;
+flex-direction: column;
+margin-left: 145px;
+margin-top: -55px;}
+.data {display: inline;}
+.alifer2 {height: fit-content;
+width: 380px;
+margin-top: 30px;}
+.chefs{margin-top: 25px;}
+
+.names {margin-top: 20px;}
+
+.desafio1{height: 250px;}
+.slogan {margin-top: -50px;}
+.calendar {height: fit-content;
+width: 380px;}
+.footerIzq {display: flex;
+flex-direction: column;}
+.redes {display: inline;}
+.map {margin-top: 45px;}
+
+.catering1 {display: flex;}
+.servicio {display: inline;}
+.video {width: 350px;
+align-items:center}
+}
