@@ -117,20 +117,12 @@ grid-template-areas:
 
 .calendar{grid-area: calendar;}
 
-.footerInfo {
-    display: flex;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    background-color: rgb(42, 185, 185);
-    grid-template-areas:
-    "izq cen ."
-    "izq cen .";
-
-    margin: none;
+.row{
     font-size: 20px;
     font-style: normal;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image:linear-gradient(to top, aqua, lightblue); }
+
 
 .redes { font-size: larger;}
 
@@ -144,10 +136,9 @@ grid-template-areas:
 .Facebook { list-style: none;
     margin-top: 20px;}
 
-.cen {    grid-area: cen;
-    justify-content: center;}
 .map { width: 300px;
     height: 300px;
+    align-content: center;
 }
 
  .n1 {margin-top: 10px;
@@ -253,8 +244,10 @@ background-color: aqua;}
     background-color: #61bdf2;
     outline: none;}
 
-textarea {min-height: 100px;
-resize: none;}
+textarea {
+    min-height: 100px;
+    resize: none;
+}
 
 .imagenEmail {width: 400px;
     height: 400px;
@@ -263,35 +256,100 @@ padding: 10px;}
 
 @media screen and (max-width: 380px)
  {
-header {background-image: none;
-background-color: aqua;}
-#logo { width: 50px;
-height: 50px;}
-nav { display: flex;}
-nav a:hover {color:white;}
-.pages {display: inline;
-flex-direction: column;
-margin-left: 145px;
-margin-top: -55px;}
-.data {display: inline;}
-.alifer2 {height: fit-content;
-width: 380px;
-margin-top: 30px;}
-.chefs{margin-top: 25px;}
+    header {
+        background-image: none;
+        background-color: aqua;
+    }
 
-.names {margin-top: 20px;}
+    #logo {
+        width: 50px;
+        height: 50px;
+    }
 
-.desafio1{height: 250px;}
-.slogan {margin-top: -50px;}
-.calendar {height: fit-content;
-width: 380px;}
-.footerIzq {display: flex;
-flex-direction: column;}
-.redes {display: inline;}
-.map {margin-top: 45px;}
+    nav {
+        display: flex;
+    }
 
-.catering1 {display: flex;}
-.servicio {display: inline;}
-.video {width: 350px;
-align-items:center}
+    nav a:hover {
+        color:white;
+    }
+
+    .pages {
+        display: inline;
+        flex-direction: column;
+        margin-left: 145px;
+        margin-top: -55px;
+    }
+
+    .data {
+        display: inline;
+    }
+
+    .alifer2 {
+        height: fit-content;
+        width: 65%;
+        margin-top: 30px;
+    }
+
+    .chefs{
+        margin-top: 25px;
+    }
+
+    .names {
+        margin-top: 20px;
+    }
+
+    .desafio1{
+        height: 250px;
+    }
+
+    .slogan {
+        margin-top: -25px;
+        font-size: 17pt;
+        padding: 10px;
+    }
+
+    .calendar {
+        height: fit-content;
+        width: 100%;
+    }
+
+    .footerIzq {
+        display: flex;
+        flex-direction: column;
+        background-image:linear-gradient(to top, aqua, lightblue);
+    }
+
+    .Cen {
+        background-image:linear-gradient(to top, aqua, lightblue);
+    }
+
+    .redes {
+        display: inline;
+    }
+
+    .map {
+        margin-top: 45px;
+    }
+
+    .catering1 {
+        display: flex;
+    }
+
+    .servicio {
+        display: inline;
+    }
+
+    .video {
+        width: 350px;
+        align-items:center
+    }
+
+    .form{text-align: center;
+    }
+
+    .imagenEmail{
+        width: 80%;
+        height: fit-content;
+    }
 }
