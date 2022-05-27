@@ -437,7 +437,6 @@
 
     .video { display: flex;
         display: inline-block;
-        margin-left: 30%;
     }
 
     .flex__container {
@@ -450,6 +449,7 @@
 
     .mensaje {
         background-color: aqua;
+        margin: 0%;
     }
 
     .form {
