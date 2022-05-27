@@ -10,15 +10,6 @@
         height: 150px;
     }
 
-    .banner{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows:repeat(2,1fr);
-        grid-template-areas:
-        "logo  .   .  ."
-        "logo nav nav .";
-    }
-
     #logo {
         grid-area: logo;
         display: inline;
@@ -33,9 +24,13 @@
         justify-content: center;
     }
 
+    .titleNav{
+        color: white;
+    }
+
 
     nav a:hover {
-    color:white;
+        color:black;
     }
 
     ul {
@@ -51,10 +46,10 @@
     }
 
     .info {
-    background-color: aquamarine;
-    justify-content: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+        background-color: aquamarine;
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .data{
@@ -131,28 +126,20 @@
     }
 
     .festivo {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(2, 1fr);
         background-color: rgb(132, 243, 219);
         text-align: center;
         height: 100% ;
         width: 100%;
-        grid-template-areas:
-        ". calendar calendar calendar ."
-        ". calendar calendar calendar ." ;
+
     }
 
-    .calendar{
-        grid-area: calendar;
-    }
 
     .row{
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 20px;
-    font-style: normal;
-    background-image:linear-gradient(to top, aqua, lightblue);
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 20px;
+        font-style: normal;
+        background-image:linear-gradient(to top, aqua, lightblue);
     }
 
 
@@ -162,7 +149,6 @@
 
     .footerizq {
         display: flex;
-        grid-area: izq;
     }
 
 
@@ -431,12 +417,15 @@
         text-align: center;
     }
 
+
     .catering1 {
         background-color: aquamarine;
+        align-items: center;
     }
 
     .video { display: flex;
         display: inline-block;
+        margin: 20px;
     }
 
     .flex__container {
@@ -575,7 +564,7 @@
     .map {
         margin-top: 45px;
         width: 95%;
-        height: 95%;
+        height: 75%;
     }
 
     .catering1 {
