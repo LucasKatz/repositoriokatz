@@ -4,9 +4,7 @@
 }
 
     header{
-        background-image: url(../img/fondo9.png);
-        background-size: cover;
-        background-position: center;
+   
         height: 150px;
     }
 
@@ -389,6 +387,11 @@
         transform: scale(1.2);
    }
 
+   .torta1{
+       margin: auto;
+       margin-top: 5px;
+   }
+
     .pascuas {
         display: flex;
         justify-content: space-between;
@@ -399,6 +402,11 @@
         transform: scale(1.2);
    }
 
+   .huevo {
+        margin: auto;
+        margin-top: 5px;
+    }
+
     .panDulce1{
         display:flex;
         justify-content: space-between;
@@ -408,6 +416,11 @@
     .pan1:hover {
         transform: scale(1.2);
    }
+
+   .pan1{
+        margin: auto;
+        margin-top: 5px;
+    }
 
     .torta{
         display: inline;
