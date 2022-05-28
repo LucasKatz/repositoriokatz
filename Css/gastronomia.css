@@ -3,17 +3,6 @@
     box-sizing: border-box;
 }
 
-    header{
-   
-        height: 150px;
-    }
-
-    #logo {
-        grid-area: logo;
-        display: inline;
-        height: 150px;
-    }
-
     nav {
         grid-area: nav;
         list-style-type: none;
@@ -132,7 +121,7 @@
     }
 
 
-    .row{
+    #fondoFooter{
         display: flex;
         justify-content: space-evenly;
         font-size: 20px;
@@ -179,7 +168,7 @@
         display: grid;
         justify-content: center;
         align-content: center;
-        grid-gap: 5px;
+        grid-gap: 10px;
         padding-bottom: 25px;
         grid-template-columns: repeat(5, 190px);
         grid-template-rows: repeat(4, 190px);
@@ -193,13 +182,11 @@
     .galeria p {
         font-size:xx-large;
         font-family: Georgia, 'Times New Roman', Times, serif;
-        text-align: center;
     }
 
     .brownies1{
-        grid-area: brownies1; border-style: solid;
-        border-width: 5px;
-        border-color: blue;
+        grid-area: brownies1;
+        margin: 5px;
      }
 
      .brownies1:hover {
@@ -208,9 +195,7 @@
 
     .brownies2 {
         grid-area: brownies2;
-        border-style: solid;
-        border-width: 5px;
-        border-color: blue;
+        margin: 5px;
     }
 
     .brownies2:hover {
@@ -219,9 +204,7 @@
 
     .brownies3{
         grid-area: brownies3;
-        border-style: solid;
-        border-width: 5px;
-        border-color: blue;
+        margin: 5px;
     }
 
     .brownies3:hover {
@@ -230,9 +213,7 @@
 
     .cookies1{
         grid-area: cookies1;
-        border-style: solid;
-        border-width: 5px;
-        border-color: blue;
+        margin: 5px;
     }
 
     .cookies1:hover {
@@ -241,9 +222,7 @@
 
     .cookies2 {
         grid-area: cookies2;
-        border-style: solid;
-        border-width: 5px;
-        border-color: blue;
+        margin: 5px;
     }
 
     .cookies2:hover {
@@ -252,9 +231,7 @@
 
     .cookies3{
         grid-area: cookies3;
-        border-style: solid;
-        border-width: 5px;
-        border-color: blue;
+        margin: 5px;
     }
 
     .cookies3:hover {
@@ -263,9 +240,7 @@
 
     .panificados1{
         grid-area: panificados1;
-        border-style: solid;
-        border-width: 5px;
-        border-color: blue;
+        margin: 5px;
     }
 
     .panificados1:hover {
@@ -274,9 +249,7 @@
 
     .panificados2{
         grid-area: panificados2;
-        border-style: solid;
-        border-width: 5px;
-        border-color: blue;
+        margin: 5px;
     }
 
     .panificados2:hover {
@@ -285,9 +258,7 @@
 
     .panificados3{
         grid-area: panificados3;
-        border-style: solid;
-        border-width: 5px;
-        border-color: blue;
+        margin: 5px;
     }
 
     .panificados3:hover {
@@ -296,9 +267,7 @@
 
     .facturas1{
         grid-area: facturas1;
-        border-style: solid;
-        border-width: 5px;
-        border-color: blue;
+        margin: 5px;
     }
 
     .facturas1:hover {
@@ -307,10 +276,8 @@
 
     .facturas2{
         grid-area: facturas2;
-        border-style: solid;
-         border-width: 5px;
-         border-color: blue;
-        }
+        margin: 5px;
+    }
 
     .facturas2:hover {
         transform: scale(1.2);
@@ -318,9 +285,7 @@
 
     .facturas3{
         grid-area: facturas3;
-        border-style: solid;
-        border-width: 5px;
-        border-color: blue;
+        margin: 5px;
     }
 
     .facturas3:hover {
@@ -329,9 +294,7 @@
 
     .salado1{
         grid-area: salado1;
-        border-style: solid;
-        border-width: 5px;
-        border-color: blue;
+        margin: 5px;
     }
 
     .salado1:hover {
@@ -340,9 +303,7 @@
 
     .salado2{
         grid-area: salado2;
-        border-style: solid;
-        border-width: 5px;
-        border-color: blue;
+        margin: 5px;
     }
 
     .salado2:hover {
@@ -351,9 +312,7 @@
 
     .salado3{
         grid-area: salado3;
-        border-style: solid;
-        border-width: 5px;
-        border-color: blue;
+        margin: 5px;
     }
 
     .salado3:hover {
