@@ -59,7 +59,6 @@
 
     .alifer2 {
         grid-area: img;
-        margin-left: 70px;
         max-width: 500px;
         max-height: 500px;
         justify-content: center;
@@ -165,18 +164,9 @@
     }
 
     #galeria{ background-color: aquamarine;
-        display: grid;
         justify-content: center;
         align-content: center;
-        grid-gap: 10px;
         padding-bottom: 25px;
-        grid-template-columns: repeat(5, 190px);
-        grid-template-rows: repeat(4, 190px);
-        grid-template-areas:
-        "name       name    name         name       name"
-        "brownies1 cookies1 panificados1 facturas1 salado1"
-        "brownies2 cookies2 panificados2 facturas2 salado2"
-        "brownies3 cookies3 panificados3 facturas3 salado3";
     }
 
     #galeria p {
@@ -191,7 +181,6 @@
     }
 
     .brownies1{
-        grid-area: brownies1;
         margin: 5px;
      }
 
@@ -200,7 +189,6 @@
     }
 
     .brownies2 {
-        grid-area: brownies2;
         margin: 5px;
     }
 
@@ -209,7 +197,6 @@
     }
 
     .brownies3{
-        grid-area: brownies3;
         margin: 5px;
     }
 
@@ -218,7 +205,6 @@
     }
 
     .cookies1{
-        grid-area: cookies1;
         margin: 5px;
     }
 
@@ -227,7 +213,6 @@
     }
 
     .cookies2 {
-        grid-area: cookies2;
         margin: 5px;
     }
 
@@ -236,7 +221,6 @@
     }
 
     .cookies3{
-        grid-area: cookies3;
         margin: 5px;
     }
 
@@ -245,7 +229,6 @@
     }
 
     .panificados1{
-        grid-area: panificados1;
         margin: 5px;
     }
 
@@ -254,7 +237,6 @@
    }
 
     .panificados2{
-        grid-area: panificados2;
         margin: 5px;
     }
 
@@ -263,7 +245,6 @@
     }
 
     .panificados3{
-        grid-area: panificados3;
         margin: 5px;
     }
 
@@ -272,7 +253,6 @@
    }
 
     .facturas1{
-        grid-area: facturas1;
         margin: 5px;
     }
 
@@ -281,7 +261,7 @@
    }
 
     .facturas2{
-        grid-area: facturas2;
+
         margin: 5px;
     }
 
@@ -290,7 +270,6 @@
    }
 
     .facturas3{
-        grid-area: facturas3;
         margin: 5px;
     }
 
@@ -299,7 +278,6 @@
    }
 
     .salado1{
-        grid-area: salado1;
         margin: 5px;
     }
 
@@ -308,7 +286,6 @@
    }
 
     .salado2{
-        grid-area: salado2;
         margin: 5px;
     }
 
@@ -317,7 +294,6 @@
    }
 
     .salado3{
-        grid-area: salado3;
         margin: 5px;
     }
 
@@ -457,6 +433,17 @@
         flex: 1;
         padding: 10px;
     }
+
+    li img{height: 180px;
+    width: 180px ;
+    }
+
+    .boton {width: 180px;
+    text-align: center;
+    font-size: x-large;
+    background-color: aquamarine;
+    }
+
 
 @media screen and (max-width: 380px)
  {
