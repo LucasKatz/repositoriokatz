@@ -164,7 +164,7 @@
         list-style: none;
     }
 
-    .galeria{ background-color: aquamarine;
+    #galeria{ background-color: aquamarine;
         display: grid;
         justify-content: center;
         align-content: center;
@@ -179,9 +179,15 @@
         "brownies3 cookies3 panificados3 facturas3 salado3";
     }
 
-    .galeria p {
+    #galeria p {
         font-size:xx-large;
         font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    #galeria img {
+        width: 180px;
+        height: 180px;
+
     }
 
     .brownies1{
