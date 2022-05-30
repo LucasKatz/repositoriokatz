@@ -111,6 +111,10 @@
         grid-area: nos;
     }
 
+    .calendar {
+        margin: 10px;
+    }
+
     .festivo {
         background-color: rgb(132, 243, 219);
         text-align: center;
@@ -318,10 +322,8 @@
         font-size: larger;
     }
 
-    .fotosTortas {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+    #carouselExampleControls {
+        text-align: center;
     }
 
     .torta1:hover {
