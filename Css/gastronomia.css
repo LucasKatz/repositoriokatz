@@ -326,43 +326,12 @@
         text-align: center;
     }
 
-    .torta1:hover {
-        transform: scale(1.2);
-   }
-
-   .torta1{
-       margin: auto;
-       margin-top: 5px;
-   }
-
-    .pascuas {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+    #carouselExampleControls2{
+        text-align: center;
     }
 
-    .huevo:hover {
-        transform: scale(1.2);
-   }
-
-   .huevo {
-        margin: auto;
-        margin-top: 5px;
-    }
-
-    .panDulce1{
-        display:flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    .pan1:hover {
-        transform: scale(1.2);
-   }
-
-   .pan1{
-        margin: auto;
-        margin-top: 5px;
+    #carouselExampleControls3{
+        text-align: center;
     }
 
     .torta{
