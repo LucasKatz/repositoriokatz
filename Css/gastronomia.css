@@ -61,9 +61,6 @@ main .chefs {
   background-repeat: no-repeat;
   background-size: cover;
 }
-main .subtitulo {
-  grid-area: subtitulo;
-}
 main .alifer2 {
   grid-area: img;
   max-width: 500px;
