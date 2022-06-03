@@ -1,0 +1,189 @@
+nav {
+    grid-area: nav;
+    list-style-type: none;
+    font-size: larger;
+    align-items: flex-end;
+    justify-content: center;
+
+    &:hover {
+    color:black;
+    }
+
+    ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    }
+
+    li {
+    display: inline;
+    font-size: larger;
+    margin: 4px;
+    }
+}
+
+main{
+
+    .row{
+    background-color: aquamarine;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .data{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 110px);
+        grid-template-areas:
+        ". subtitulo subtitulo  ."
+        ". img          img     . "
+        ".  img         img     . "
+        ". names      names     ."
+        " chefs chefs chefs chefs ";
+        justify-items: center;
+        align-items: center;
+    }
+
+    .subtitulo {
+        grid-area: subtitulo;
+    }
+
+    .alifer2 {
+        grid-area: img;
+        max-width: 500px;
+        max-height: 500px;
+        justify-content: center;
+    }
+
+    .names{
+    grid-area: names;
+    justify-content: flex-end;
+    margin-top: 50px;
+    }
+
+    h2 {
+        font-size: 32px;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .chefs {
+        grid-area: chefs;
+        font-style: oblique;
+        text-align: center;
+        font-size: larger;
+        padding: 2%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .subtitulo {
+        grid-area: subtitulo;
+    }
+
+    .alifer2 {
+        grid-area: img;
+        max-width: 500px;
+        max-height: 500px;
+        justify-content: center;
+    }
+
+    .names{
+        grid-area: names;
+        justify-content: flex-end;
+        margin-top: 50px;
+    }
+
+    h2 {
+        font-size: 32px;
+        font-style: italic;
+        text-align: center;
+
+    }
+
+    .chefs {
+        grid-area: chefs;
+        font-style: oblique;
+        text-align: center;
+        font-size: larger;
+        padding: 2%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .desafio1 {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-area:
+        ". slogan slogan slogan ."
+        "nos nos nos nos nos";
+        font-style: oblique;
+        text-align: center;
+        padding: 20px;
+        background-color: rgba(21, 184, 42, 0.463);
+    }
+
+    .slogan {
+        grid-area: slogan;
+    }
+
+    .nos {
+        margin-top: 40px;
+        grid-area: nos;
+    }
+
+    .calendar {
+        margin: 10px;
+    }
+
+    .festivo {
+        background-color: rgb(132, 243, 219);
+        text-align: center;
+        height: 100% ;
+        width: 100%;
+    }
+}
+
+footer {
+
+    #fondoFooter{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 20px;
+        font-style: normal;
+        background-image:linear-gradient(to top, aqua, lightblue);
+    }
+
+    .redes {
+        font-size: larger;
+    }
+
+    .footerizq {
+        display: flex;
+    }
+
+    .Instagram {
+        list-style: none;
+    }
+
+    .Facebook {
+        list-style: none;
+        margin-top: 20px;
+    }
+
+    .map {
+        width: 300px;
+        height: 300px;
+        align-content: center;
+    }
+
+}
+
+
+
+
+
+

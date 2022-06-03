@@ -1,0 +1,231 @@
+nav {
+  grid-area: nav;
+  list-style-type: none;
+  font-size: larger;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav:hover {
+  color: black;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav li {
+  display: inline;
+  font-size: larger;
+  margin: 4px;
+}
+
+main .row {
+  background-color: aquamarine;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .data {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (110px)[5];
+      grid-template-rows: repeat(5, 110px);
+      grid-template-areas: ". subtitulo subtitulo  ." ". img          img     . " ".  img         img     . " ". names      names     ." " chefs chefs chefs chefs ";
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .subtitulo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: subtitulo;
+}
+
+main .alifer2 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: img;
+  max-width: 500px;
+  max-height: 500px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .names {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: names;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 50px;
+}
+
+main h2 {
+  font-size: 32px;
+  font-style: italic;
+  text-align: center;
+}
+
+main .chefs {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: chefs;
+  font-style: oblique;
+  text-align: center;
+  font-size: larger;
+  padding: 2%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .subtitulo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: subtitulo;
+}
+
+main .alifer2 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: img;
+  max-width: 500px;
+  max-height: 500px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .names {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: names;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 50px;
+}
+
+main h2 {
+  font-size: 32px;
+  font-style: italic;
+  text-align: center;
+}
+
+main .chefs {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: chefs;
+  font-style: oblique;
+  text-align: center;
+  font-size: larger;
+  padding: 2%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .desafio1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-area: ". slogan slogan slogan ." "nos nos nos nos nos";
+  font-style: oblique;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(21, 184, 42, 0.463);
+}
+
+main .slogan {
+  grid-area: slogan;
+}
+
+main .nos {
+  margin-top: 40px;
+  grid-area: nos;
+}
+
+main .calendar {
+  margin: 10px;
+}
+
+main .festivo {
+  background-color: #84f3db;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+footer #fondoFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 20px;
+  font-style: normal;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(aqua), to(lightblue));
+  background-image: linear-gradient(to top, aqua, lightblue);
+}
+
+footer .redes {
+  font-size: larger;
+}
+
+footer .footerizq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .Instagram {
+  list-style: none;
+}
+
+footer .Facebook {
+  list-style: none;
+  margin-top: 20px;
+}
+
+footer .map {
+  width: 300px;
+  height: 300px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+/*# sourceMappingURL=estilos.css.map */
