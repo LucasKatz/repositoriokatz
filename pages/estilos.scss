@@ -17,7 +17,6 @@ h2{
 }
 
 nav{
-    grid-area: nav;
     list-style-type: none;
     font-size: larger;
     align-items: flex-end;
@@ -43,7 +42,7 @@ nav{
 main{
 
     .row{
-    background-color: aquamarine;
+    background-color: $color1;
     justify-content: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -108,7 +107,7 @@ main{
         font-style: oblique;
         text-align: center;
         padding: 20px;
-        background-color: rgba(21, 184, 42, 0.463);
+        background-color: $color3
     }
 
     .slogan {
@@ -125,8 +124,8 @@ main{
     }
 
     .festivo {
-        background-color: rgb(132, 243, 219);
-        text-align: center;
+        background-color: $color1;
+        text-align:center;
         height: 100% ;
         width: 100%;
     }

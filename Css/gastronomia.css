@@ -107,7 +107,7 @@ main .calendar {
   margin: 10px;
 }
 main .festivo {
-  background-color: rgb(134, 243, 220);
+  background-color: hwb(167 53% 5%);
   text-align: center;
   height: 100%;
   width: 100%;
