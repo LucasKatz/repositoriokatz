@@ -1,4 +1,22 @@
-nav {
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Tiro+Gurmukhi:ital@1&family=Tiro+Telugu&display=swap');
+
+
+$font1:'Merriweather', serif;
+$font2:'Tiro Gurmukhi', serif;
+$font3:'Tiro Telugu', serif;
+$color1:aquamarine;
+$color2:#00ffff;
+$color3:rgb(134, 243, 220);
+
+h1{
+    font-family: $font2;
+}
+
+h2{
+    font-family: $font3;
+}
+
+nav{
     grid-area: nav;
     list-style-type: none;
     font-size: larger;
@@ -62,11 +80,6 @@ main{
     margin-top: 50px;
     }
 
-    h2 {
-        font-size: 32px;
-        font-style: italic;
-        text-align: center;
-    }
 
     .chefs {
         grid-area: chefs;
@@ -78,36 +91,12 @@ main{
         background-size: cover;
     }
 
-    .alifer2 {
-        grid-area: img;
-        max-width: 500px;
-        max-height: 500px;
-        justify-content: center;
-    }
-
-    .names{
-        grid-area: names;
-        justify-content: flex-end;
-        margin-top: 50px;
-    }
-
     h2 {
         font-size: 32px;
         font-style: italic;
         text-align: center;
 
     }
-
-    .chefs {
-        grid-area: chefs;
-        font-style: oblique;
-        text-align: center;
-        font-size: larger;
-        padding: 2%;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
 
     .desafio1 {
         display: grid;

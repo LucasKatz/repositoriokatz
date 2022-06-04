@@ -107,7 +107,7 @@ main .calendar {
   margin: 10px;
 }
 main .festivo {
-  background-color: rgb(132, 243, 219);
+  background-color: rgb(134, 243, 220);
   text-align: center;
   height: 100%;
   width: 100%;
@@ -140,3 +140,364 @@ footer .map {
 }
 
 /*# sourceMappingURL=gastronomia.css.map */
+#galeria{ background-color: aquamarine;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 25px;
+}
+
+#galeria p {
+  font-size:xx-large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#galeria img {
+  width: 180px;
+  height: 180px;
+
+}
+
+.brownies1{
+  margin: 5px;
+}
+
+.brownies1:hover {
+  transform: scale(1.2);
+}
+
+.brownies2 {
+  margin: 5px;
+}
+
+.brownies2:hover {
+  transform: scale(1.2);
+}
+
+.brownies3{
+  margin: 5px;
+}
+
+.brownies3:hover {
+  transform: scale(1.2);
+}
+
+.cookies1{
+  margin: 5px;
+}
+
+.cookies1:hover {
+  transform: scale(1.2);
+}
+
+.cookies2 {
+  margin: 5px;
+}
+
+.cookies2:hover {
+  transform: scale(1.2);
+}
+
+.cookies3{
+  margin: 5px;
+}
+
+.cookies3:hover {
+  transform: scale(1.2);
+}
+
+.panificados1{
+  margin: 5px;
+}
+
+.panificados1:hover {
+  transform: scale(1.2);
+}
+
+.panificados2{
+  margin: 5px;
+}
+
+.panificados2:hover {
+  transform: scale(1.2);
+}
+
+.panificados3{
+  margin: 5px;
+}
+
+.panificados3:hover {
+  transform: scale(1.2);
+}
+
+.facturas1{
+  margin: 5px;
+}
+
+.facturas1:hover {
+  transform: scale(1.2);
+}
+
+.facturas2{
+
+  margin: 5px;
+}
+
+.facturas2:hover {
+  transform: scale(1.2);
+}
+
+.facturas3{
+  margin: 5px;
+}
+
+.facturas3:hover {
+  transform: scale(1.2);
+}
+
+.salado1{
+  margin: 5px;
+}
+
+.salado1:hover {
+  transform: scale(1.2);
+}
+
+.salado2{
+  margin: 5px;
+}
+
+.salado2:hover {
+  transform: scale(1.2);
+}
+
+.salado3{
+  margin: 5px;
+}
+
+.salado3:hover {
+  transform: scale(1.2);
+}
+
+.productosFestivos {
+  background-color: aquamarine;
+  padding: 10px;
+}
+
+.serviciosPersonalizados {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.volanta {
+  text-align: center;
+  font-style: normal;
+  font-size: larger;
+}
+
+#carouselExampleControls {
+  text-align: center;
+}
+
+#carouselExampleControls2{
+  text-align: center;
+}
+
+#carouselExampleControls3{
+  text-align: center;
+}
+
+.torta{
+  display: inline;
+}
+
+.servicio {
+  text-align: center;
+}
+
+.catering1 {
+  background-color: aquamarine;
+  align-items: center;
+}
+
+.video { display: flex;
+  display: inline-block;
+  margin: 20px;
+}
+
+.flex__container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: aqua;
+}
+
+.mensaje {
+  background-color: #00ffff;
+  margin: 0%;
+}
+
+.form {
+  width: 100%;
+  height: 400px;
+  flex: 1;
+  text-align: right;
+}
+
+.form__input {
+  width: 70%;
+  margin: 7px;
+  padding: 7px;
+  border: none;
+  border: 5px solid #468bb3;
+  background: transparent;
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: medium;}
+
+#button {
+  width: 160px;
+}
+
+.form__input:focus {
+background-color: #61bdf2;
+outline: none;
+}
+
+textarea {
+min-height: 100px;
+resize: none;
+}
+
+.imagenEmail {
+  width: 400px;
+  height: 400px;
+  flex: 1;
+  padding: 10px;
+}
+
+li img{height: 180px;
+width: 180px ;
+}
+
+.boton {width: 180px;
+text-align: center;
+font-size: x-large;
+background-color: aquamarine;
+}
+
+@media screen and (max-width: 380px)
+{
+header {
+  background-image: none;
+  background-color: aqua;
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+}
+
+nav {
+  display: flex;
+}
+
+nav a:hover {
+  color:white;
+}
+
+.pages {
+  display: inline;
+  flex-direction: column;
+  margin-left: 145px;
+  margin-top: -80px;
+  font-size: medium;
+}
+
+.data {
+  display: inline;
+}
+
+.alifer2 {
+  height: fit-content;
+  width: 65%;
+  margin-top: 30px;
+}
+
+.chefs{
+  margin-top: 25px;
+}
+
+.names {
+  margin-top: 20px;
+}
+
+.desafio1{
+  height: 350px;
+}
+
+.slogan {
+  margin-top: -25px;
+  font-size: 17pt;
+  padding: 10px;
+}
+
+.festivo {
+  height: 180px;
+  display: flex;
+}
+
+.calendar {
+  height: fit-content;
+  width: 80%;
+  margin: auto;
+}
+
+.footerIzq {
+  display: flex;
+  flex-direction: column;
+  background-image:linear-gradient(to top, aqua, lightblue);
+}
+
+.Cen {
+  background-image:linear-gradient(to top, aqua, lightblue);
+}
+
+.redes {
+  display: inline;
+}
+
+.map {
+  margin-top: 45px;
+  width: 95%;
+  height: 75%;
+}
+
+.catering1 {
+  display: flex;
+}
+
+.servicio {
+  display: inline;
+}
+
+.video {
+  width: 350px;
+  align-items:center
+}
+
+.form{
+  text-align: center;
+}
+
+.emailContainer {
+  display: flex;
+}
+
+.imagenEmail{
+  width: 80%;
+  height: fit-content;
+  justify-content: center;
+}
+}
