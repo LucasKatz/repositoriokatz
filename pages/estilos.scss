@@ -10,6 +10,10 @@ $color3:rgb(134, 243, 220);
 
 /*MODIFICADORES UNIVERSALES */
 
+*{margin: 0%;
+box-sizing: border-box;
+}
+
 h1{
     font-family: $font2;
 }
@@ -21,10 +25,8 @@ h2{
 /*BARRA DE NAVEGACIÓN*/
 
 nav{
-    list-style-type: none;
     font-size: larger;
-    align-items: flex-end;
-    justify-content: center;
+
 
     &:hover {
     color:black;
@@ -46,53 +48,37 @@ nav{
 /*INDEX - DATOS PERSONALES */
 main{
 
-    .row{
+    .perfil{
     background-color: $color1;
     justify-content: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     }
 
     .data{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(5, 110px);
-        grid-template-areas:
-        ". subtitulo subtitulo  ."
-        ". img          img     . "
-        ".  img         img     . "
-        ". names      names     ."
-        " chefs chefs chefs chefs ";
-        justify-items: center;
-        align-items: center;
+        display: flex;
     }
 
-    .subtitulo {
-        grid-area: subtitulo;
+    .subtitulo{
+        text-align: center;
+        margin-bottom: 50px;
     }
 
     .alifer2 {
-        grid-area: img;
-        max-width: 500px;
-        max-height: 500px;
-        justify-content: center;
+        width: 500px;
+        height: 500px;
+        margin-left: 20px;
+        margin-top: -40px;
     }
 
-    .names{
-    grid-area: names;
-    justify-content: flex-end;
-    margin-top: 50px;
+    .names {
+        margin-left: 600px;
+        display: inline;
     }
-
 
     .chefs {
-        grid-area: chefs;
+        margin-top: 40px;
         font-style: oblique;
-        text-align: center;
         font-size: larger;
         padding: 2%;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
     /*INDEX - SLOGAN */
@@ -107,7 +93,8 @@ main{
         font-style: oblique;
         text-align: center;
         padding: 20px;
-        background-color: $color3
+        background-color: $color3;
+        margin-top: 20px;
     }
 
     .slogan {
@@ -171,141 +158,179 @@ footer {
 /*PRODUCTOS - GALERIAS */
 
     #galeria{ background-color: aquamarine;
-        justify-content: center;
-        align-content: center;
         padding-bottom: 25px;
-    }
+        display: grid;
+        grid-template-columns: repeat(5, 2fr);
+        grid-template-rows: 20%, repeat(3, 2fr);
+        grid-template-areas:
+        "budines    cookies panaderia    facturas  salado"
+        "brownies1 cookies1 panificados1 facturas1 salado1"
+        "brownies2 cookies2 panificados2 facturas2 salado2"
+        "brownies3 cookies3 panificados3 facturas3 salado3";
 
-    #galeria p {
+
+        .title1{
+        text-align: center;
         font-size:xx-large;
         font-family: Georgia, 'Times New Roman', Times, serif;
-    }
+        }
 
-    #galeria img {
+        .title2{
+            @extend .title1;
+        }
+
+        .title3{
+            @extend .title1;
+        }
+
+        .title4{
+            @extend .title1;
+        }
+
+        .title5{
+            @extend .title1;
+        }
+
+        img {
+        align-items:center;
         width: 180px;
         height: 180px;
+        }
 
-    }
-
-    .brownies1{
+        .brownies1{
+        grid-area: brownies1;
         margin: 5px;
-    }
+        }
 
-    .brownies1:hover {
+        .brownies1:hover {
         transform: scale(1.2);
-    }
+        }
 
-    .brownies2 {
-        margin: 5px;
-    }
+        .brownies2 {
+            grid-area: brownies2;
+            margin: 5px;
+        }
 
-    .brownies2:hover {
+        .brownies2:hover {
+            transform: scale(1.2);
+        }
+
+        .brownies3{
+            grid-area: brownies3;
+            margin: 5px;
+        }
+
+        .brownies3:hover {
+            transform: scale(1.2);
+        }
+
+        .cookies1{
+            grid-area: cookies1;
+            margin: 5px;
+        }
+
+        .cookies1:hover {
         transform: scale(1.2);
-    }
+        }
 
-    .brownies3{
-        margin: 5px;
-    }
+        .cookies2 {
+            grid-area: cookies2;
+            margin: 5px;
+        }
 
-    .brownies3:hover {
+        .cookies2:hover {
+            transform: scale(1.2);
+        }
+
+        .cookies3{
+            grid-area: cookies3;
+            margin: 5px;
+        }
+
+        .cookies3:hover {
+            transform: scale(1.2);
+        }
+
+        .panificados1{
+            grid-area: panificados1;
+            margin: 5px;
+        }
+
+        .panificados1:hover {
         transform: scale(1.2);
-    }
+        }
 
-    .cookies1{
-        margin: 5px;
-    }
+        .panificados2{
+            grid-area: panificados2;
+            margin: 5px;
+        }
 
-    .cookies1:hover {
-        transform: scale(1.2);
-    }
+        .panificados2:hover {
+            transform: scale(1.2);
+        }
 
-    .cookies2 {
-        margin: 5px;
-    }
+        .panificados3{
+            grid-area: panificados3;
+            margin: 5px;
+        }
 
-    .cookies2:hover {
-        transform: scale(1.2);
-    }
+        .panificados3:hover {
+            transform: scale(1.2);
+        }
 
-    .cookies3{
-        margin: 5px;
-    }
+        .facturas1{
+            grid-area: facturas1;
+            margin: 5px;
+        }
 
-    .cookies3:hover {
-        transform: scale(1.2);
-    }
+        .facturas1:hover {
+            transform: scale(1.2);
+        }
 
-    .panificados1{
-        margin: 5px;
-    }
+        .facturas2{
+            grid-area: facturas2;
+            margin: 5px;
+        }
 
-    .panificados1:hover {
-        transform: scale(1.2);
-    }
+        .facturas2:hover {
+            transform: scale(1.2);
+        }
 
-    .panificados2{
-        margin: 5px;
-    }
+        .facturas3{
+            grid-area: facturas3;
+            margin: 5px;
+        }
 
-    .panificados2:hover {
-        transform: scale(1.2);
-    }
+        .facturas3:hover {
+            transform: scale(1.2);
+        }
 
-    .panificados3{
-        margin: 5px;
-    }
+        .salado1{
+            grid-area: salado1;
+            margin: 5px;
+        }
 
-    .panificados3:hover {
-        transform: scale(1.2);
-    }
+        .salado1:hover {
+            transform: scale(1.2);
+        }
 
-    .facturas1{
-        margin: 5px;
-    }
+        .salado2{
+            grid-area: salado2;
+            margin: 5px;
+        }
 
-    .facturas1:hover {
-        transform: scale(1.2);
-    }
+        .salado2:hover {
+            transform: scale(1.2);
+        }
 
-    .facturas2{
+        .salado3{
+            grid-area: salado3;
+            margin: 5px;
+        }
 
-        margin: 5px;
-    }
-
-    .facturas2:hover {
-        transform: scale(1.2);
-    }
-
-    .facturas3{
-        margin: 5px;
-    }
-
-    .facturas3:hover {
-        transform: scale(1.2);
-    }
-
-    .salado1{
-        margin: 5px;
-    }
-
-    .salado1:hover {
-        transform: scale(1.2);
-    }
-
-    .salado2{
-        margin: 5px;
-    }
-
-    .salado2:hover {
-        transform: scale(1.2);
-    }
-
-    .salado3{
-        margin: 5px;
-    }
-
-    .salado3:hover {
-        transform: scale(1.2);
+        .salado3:hover {
+            transform: scale(1.2);
+        }
     }
 
     /*FESTIVIDADES - INFORMACIÓN GENERAL */
@@ -340,10 +365,7 @@ footer {
     #carouselExampleControls3{
         text-align: center;
     }
-/* TORTA SOBRA??*/
-    .torta{
-        display: inline;
-    }
+ 
 /*SERVICIO DE CATERING*/
 
     .servicio {
