@@ -58,6 +58,7 @@ main .alifer2 {
 main .names {
   margin-left: 600px;
   display: inline;
+  font-size: xx-large;
 }
 main .chefs {
   margin-top: 40px;
@@ -121,13 +122,53 @@ footer .map {
 }
 
 /*PRODUCTOS - GALERIAS */
+.img-blue {
+  border: 2px;
+  border-width: 2px;
+  border-color: blue;
+  border-style: solid;
+}
+
+.img-green {
+  border: 2px;
+  border-width: 4px;
+  border-color: green;
+  border-style: solid;
+}
+
+.img-red {
+  border: 2px;
+  border-width: 6px;
+  border-color: red;
+  border-style: solid;
+}
+
+.img-yellow {
+  border: 2px;
+  border-width: 8px;
+  border-color: yellow;
+  border-style: solid;
+}
+
+.img-orange {
+  border: 2px;
+  border-width: 10px;
+  border-color: orange;
+  border-style: solid;
+}
+
 #galeria {
+  display: flex;
   background-color: aquamarine;
   padding-bottom: 25px;
   display: grid;
   grid-template-columns: repeat(5, 2fr);
-  grid-template-rows: 20%, repeat(3, 2fr);
-  grid-template-areas: "budines    cookies panaderia    facturas  salado" "brownies1 cookies1 panificados1 facturas1 salado1" "brownies2 cookies2 panificados2 facturas2 salado2" "brownies3 cookies3 panificados3 facturas3 salado3";
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "budines   cookies panaderia    facturas  salado" "brownies1 cookies1 panificados1 facturas1 salado1" "brownies2 cookies2 panificados2 facturas2 salado2" "brownies3 cookies3 panificados3 facturas3 salado3";
+}
+#galeria .tituloSecundario {
+  grid-area: h1;
+  max-height: 30px;
 }
 #galeria .title1, #galeria .title5, #galeria .title4, #galeria .title3, #galeria .title2 {
   text-align: center;

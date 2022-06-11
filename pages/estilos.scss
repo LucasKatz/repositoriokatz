@@ -29,8 +29,8 @@ nav{
 
 
     &:hover {
-    color:black;
-    }
+        color:black;
+        }
 
     ul {
     display: flex;
@@ -72,6 +72,7 @@ main{
     .names {
         margin-left: 600px;
         display: inline;
+        font-size:xx-large;
     }
 
     .chefs {
@@ -122,9 +123,9 @@ main{
 
 footer {
 
+
     #fondoFooter{
         display: flex;
-        justify-content: space-evenly;
         font-size: 20px;
         font-style: normal;
         background-image:linear-gradient(to top, aqua, lightblue);
@@ -134,11 +135,6 @@ footer {
         font-size: larger;
         }
 
-        .footerizq {
-        display: flex;
-        }
-
-
         .Instagram {
             list-style: none;
         }
@@ -146,28 +142,61 @@ footer {
         .Facebook {
             list-style: none;
             margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .n1{
+            list-style:none;
+        }
+
+        .n2{
+            list-style:none;
         }
 
         .map {
             width: 300px;
             height: 300px;
-            align-content: center;
         }
     }
 
 /*PRODUCTOS - GALERIAS */
 
-    #galeria{ background-color: aquamarine;
+    $mapa1:(
+        2px: blue,
+        4px: green,
+        6px: red,
+        8px: yellow,
+        10px: orange
+    );
+
+    @each $size, $bcolor in $mapa1 {
+        .img-#{$bcolor} {
+            border: 2px;
+            border-width:$size;
+            border-color:$bcolor;
+            border-style: solid;
+        }
+
+    }
+
+    .titles{
+        text-align: center;
+        background-color: rgb(182, 198, 38);
+        margin-bottom: 0%;
+    }
+
+    #galeria{ display: flex;
+        background-color: aquamarine;
         padding-bottom: 25px;
         display: grid;
-        grid-template-columns: repeat(5, 2fr);
-        grid-template-rows: 20%, repeat(3, 2fr);
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         grid-template-areas:
-        "budines    cookies panaderia    facturas  salado"
+        "budines   cookies panaderia    facturas  salado"
         "brownies1 cookies1 panificados1 facturas1 salado1"
         "brownies2 cookies2 panificados2 facturas2 salado2"
         "brownies3 cookies3 panificados3 facturas3 salado3";
-
+        height: 650px;
 
         .title1{
         text-align: center;
