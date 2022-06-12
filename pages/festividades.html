@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tenemos la comida ideal para cada ocasión. Hacemos tortas y postres personalizados a gusto de cada cliente. Tambien elaboramos las comidas tipicas de cada ocasion ya sean cumpleaños, pascuas, navidad o fechas patrias">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href= "../Css/estilos.css">
+    <link rel="stylesheet" type="text/css" href= "../Sass/estilos.css">
     <title>Comidas Tipicas de Festividades</title>
 </head>
 
@@ -14,44 +14,43 @@
     <header>
 
           <!-- BARRA DE NAVEGACION-->
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
 
-                <a class="navbar-brand" href="#"><img src="../img/AliFer.png" height="130px"></a>
+                    <a class="navbar-brand" href="#"><img src="../img/AliFer.png" height="130px"></a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Principal</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link active boton" aria-current="page" href="../index.html">Principal</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link active boton" aria-current="page" href="../pages/productos.html">Productos</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="./festividades.html">Festividades</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link boton" href="../pages/festividades.html">Festividades</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="./catering.html">Catering</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link boton" href="../pages/catering.html">Catering</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link boton" href="../pages/contacto.html">Contacto</a>
+                        </li>
+
+                    </div>
 
                 </div>
 
-            </div>
-
-        </nav>
+            </nav>
     </header>
 
     <!--PRODUCTOS PARA DISTINTAS FECHAS FESTIVAS -->
@@ -165,30 +164,27 @@
     </article>
 
     <footer>
+      <div class="container-fluid">
+          <div class="row justify-content-evenly" id="fondoFooter">
+              <div class="col-md-4 footerIzq ">
 
-              <!--PIE DE PÁGINA -->
+                  <p class="redes"> Seguinos en nuestras redes </p>
 
-        <div class="container-fluid">
-            <div class="row justify-content-evenly" id="fondoFooter">
-                <div class="col-4 footerIzq ">
+                  <li class="Instagram"> <a href="https://www.instagram.com/alifer.pasteleria/" target="blank">Instagram</a></li>
 
-                    <p class="redes"> Seguinos en nuestras redes </p>
+                  <li class="Facebook"><a href="https://www.facebook.com/alicia.rossetto.3" target="blank">Facebook</a></li>
 
-                    <li class="Instagram"> <a href="https://www.instagram.com/alifer.pasteleria/" target="blank">Instagram</a></li>
+                  <li class="n1">+54 9 11 6732-4190 Fernanda </li>
+                  <li class="n2">+54 9 11 6377-8121 Alicia</li>
 
-                    <li class="Facebook"><a href="https://www.facebook.com/alicia.rossetto.3" target="blank">Facebook</a></li>
-
-                    <li class="n1">+54 9 11 6732-4190 Fernanda </li>
-                    <li class="n2">+54 9 11 6377-8121 Alicia</li>
-
-                </div>
-                <div class="col-4  Cen">
-                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.334000085461!2d-58.526075!3d-34.646267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc84381a755a9%3A0xdb0b32c7e46601ea!2sMontiel%20647%2C%20C1408FVM%20CABA!5e0!3m2!1ses-419!2sar!4v1650132215962!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-        </div>
-    </footer>
+              </div>
+              <div class="col-md-4  Cen">
+                  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.334000085461!2d-58.526075!3d-34.646267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc84381a755a9%3A0xdb0b32c7e46601ea!2sMontiel%20647%2C%20C1408FVM%20CABA!5e0!3m2!1ses-419!2sar!4v1650132215962!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+              </div>
+          </div>
+      </div>
+  </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

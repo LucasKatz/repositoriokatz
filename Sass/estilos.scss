@@ -11,6 +11,11 @@ $color1:aquamarine;
 $color2:#00ffff;
 $color3:rgb(134, 243, 220);
 
+$estilos: (
+    borde:15px solid, solid
+    color:blue
+);
+
 /*MODIFICADORES UNIVERSALES */
 
 *{margin: 0%;
@@ -63,27 +68,27 @@ main{
     .perfil{
     background-color: $color1;
     justify-content: center;
-    }
-
-    .data{
-        display: flex;
+    padding-bottom: 15px;
     }
 
     .subtitulo{
         text-align: center;
-        margin-bottom: 50px;
+        margin:15px 0px 35px 0px;
         font-family:$font2
     }
 
     .alifer2 {
         @include sizes(500px,500px );
         margin-left: 20px;
-        margin-top: -40px;
+
+        border: map-get($estilos, borde);
+        border: map-get($estilos, color);
     }
 
     .names {
-        margin-left: 600px;
-        display: inline;
+
+        display: flex;
+        justify-content: center;
         font-size:xx-large;
         font-family: $font2;
     }
@@ -174,24 +179,6 @@ footer {
     }
 
 /*PRODUCTOS - GALERIAS */
-
-    $mapa1:(
-        2px: blue,
-        4px: green,
-        6px: red,
-        8px: yellow,
-        10px: orange
-    );
-
-    @each $size, $bcolor in $mapa1 {
-        .img-#{$bcolor} {
-            border: 2px;
-            border-width:$size;
-            border-color:$bcolor;
-            border-style: solid;
-        }
-
-    }
 
     .titles{
         text-align: center;
@@ -399,16 +386,18 @@ footer {
 
     #carouselExampleControls {
         text-align: center;
+
     }
 
     #carouselExampleControls2{
         text-align: center;
     }
 
+
     #carouselExampleControls3{
         text-align: center;
     }
- 
+
 /*SERVICIO DE CATERING*/
 
     .servicio {
@@ -586,8 +575,23 @@ footer {
 
     .map {
         margin-top: 45px;
-        width: 95%;
-        height: 75%;
+        width: 60px;
+        height: 60px;
+    }
+
+    /*FESTIVIDADES*/
+
+    .torta1 {
+    height: 180px;
+    width: 180px;
+    }
+
+    .huevo {
+        @extend .torta1;
+    }
+
+    .pan1{
+        @extend .torta1;
     }
 
     /* SERVICIO DE CATERING*/
