@@ -4,7 +4,8 @@
 /*MODIFICADORES UNIVERSALES */
 * {
   margin: 0%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 h1 {
@@ -19,17 +20,28 @@ h2 {
 nav {
   font-size: larger;
 }
+
 nav .boton {
   font-family: "Indie Flower", cursive;
 }
+
 nav:hover {
   color: black;
 }
+
 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 nav li {
   display: inline;
   font-size: larger;
@@ -41,56 +53,68 @@ main {
   /*INDEX - SLOGAN */
   /*INDEX - FECHAS IMPORTANTES DE GASTRONOMIA*/
 }
+
 main .perfil {
   background-color: aquamarine;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 15px;
 }
+
 main .subtitulo {
   text-align: center;
   margin: 15px 0px 35px 0px;
   font-family: "Pacifico", cursive;
 }
+
 main .alifer2 {
   height: 500px;
   width: 500px;
   margin-left: 20px;
   border: 15px solid;
 }
+
 main .names {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: xx-large;
-  font-family: "Pacifico", cursive;
+  font-family: "Indie Flower", cursive;
 }
+
 main .chefs {
   margin-top: 40px;
   font-family: "Satisfy", cursive;
-  font-size: larger;
+  font-size: x-large;
   padding: 2%;
 }
+
 main .desafio1 {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-area: ". slogan slogan slogan ." "nos nos nos nos nos";
-  font-style: oblique;
   text-align: center;
-  padding: 20px;
-  background-color: rgb(134, 243, 220);
-  margin-top: 20px;
+  padding: 30px;
+  background-color: #86f3dc;
 }
+
 main .slogan {
   grid-area: slogan;
+  font-family: "Pacifico", cursive;
 }
+
 main .nos {
   margin-top: 40px;
   grid-area: nos;
   font-family: "Satisfy", cursive;
+  font-size: x-large;
 }
+
 main .calendar {
   margin: 10px;
 }
+
 main .festivo {
   background-color: aquamarine;
   text-align: center;
@@ -100,28 +124,45 @@ main .festivo {
 
 /*PIE DE PÁGINA */
 footer #fondoFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 20px;
   font-style: normal;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(aqua), to(lightblue));
   background-image: linear-gradient(to top, aqua, lightblue);
 }
+
 footer .redes {
   font-size: larger;
+  font-family: "Pacifico", cursive;
 }
+
 footer .Instagram {
   list-style: none;
+  font-family: "Pacifico", cursive;
 }
+
 footer .Facebook {
   list-style: none;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0px 20px 0px;
+  font-family: "Pacifico", cursive;
 }
+
+footer .fa-facebook, footer .fa-instagram, footer .fa-whatsapp {
+  margin-right: 5px;
+}
+
 footer .n1 {
   list-style: none;
+  font-family: "Pacifico", cursive;
 }
+
 footer .n2 {
   list-style: none;
+  font-family: "Pacifico", cursive;
 }
+
 footer .map {
   width: 300px;
   height: 300px;
@@ -130,134 +171,219 @@ footer .map {
 /*PRODUCTOS - GALERIAS */
 .titles {
   text-align: center;
-  background-color: rgb(182, 198, 38);
+  background-color: #b6c626;
   margin-bottom: 0%;
+  font-family: "Pacifico", cursive;
 }
 
 #galeria {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: aquamarine;
   padding-bottom: 25px;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas: "budines   cookies panaderia    facturas  salado" "brownies1 cookies1 panificados1 facturas1 salado1" "brownies2 cookies2 panificados2 facturas2 salado2" "brownies3 cookies3 panificados3 facturas3 salado3";
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas: "budines   cookies panaderia    facturas  salado" "brownies1 cookies1 panificados1 facturas1 salado1" "brownies2 cookies2 panificados2 facturas2 salado2" "brownies3 cookies3 panificados3 facturas3 salado3";
   height: 650px;
 }
-#galeria .title1, #galeria .title5, #galeria .title4, #galeria .title3, #galeria .title2 {
+
+#galeria .title1, #galeria .title2, #galeria .title3, #galeria .title4, #galeria .title5 {
   text-align: center;
   font-size: xx-large;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Indie Flower", cursive;
 }
+
 #galeria img {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 180px;
   height: 180px;
 }
+
 #galeria .brownies1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: brownies1;
   margin: 5px;
 }
+
 #galeria .brownies1:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .brownies2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: brownies2;
   margin: 5px;
 }
+
 #galeria .brownies2:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .brownies3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
   grid-area: brownies3;
   margin: 5px;
 }
+
 #galeria .brownies3:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .cookies1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: cookies1;
   margin: 5px;
 }
+
 #galeria .cookies1:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .cookies2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
   grid-area: cookies2;
   margin: 5px;
 }
+
 #galeria .cookies2:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .cookies3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
   grid-area: cookies3;
   margin: 5px;
 }
+
 #galeria .cookies3:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .panificados1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: panificados1;
   margin: 5px;
 }
+
 #galeria .panificados1:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .panificados2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
   grid-area: panificados2;
   margin: 5px;
 }
+
 #galeria .panificados2:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .panificados3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
   grid-area: panificados3;
   margin: 5px;
 }
+
 #galeria .panificados3:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .facturas1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
   grid-area: facturas1;
   margin: 5px;
 }
+
 #galeria .facturas1:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .facturas2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
   grid-area: facturas2;
   margin: 5px;
 }
+
 #galeria .facturas2:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .facturas3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
   grid-area: facturas3;
   margin: 5px;
 }
+
 #galeria .facturas3:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .salado1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 5;
   grid-area: salado1;
   margin: 5px;
 }
+
 #galeria .salado1:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .salado2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
   grid-area: salado2;
   margin: 5px;
 }
+
 #galeria .salado2:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .salado3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 5;
   grid-area: salado3;
   margin: 5px;
 }
+
 #galeria .salado3:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 /*FESTIVIDADES - INFORMACIÓN GENERAL */
@@ -269,13 +395,13 @@ footer .map {
 .serviciosPersonalizados {
   text-align: center;
   font-size: 40px;
-  font-weight: bold;
+  font-family: "Pacifico", cursive;
 }
 
 .volanta {
   text-align: center;
-  font-style: normal;
-  font-size: larger;
+  font-family: "Satisfy", cursive;
+  font-size: x-large;
 }
 
 /*FESTIVIDADES - CAROUSELES */
@@ -294,14 +420,24 @@ footer .map {
 /*SERVICIO DE CATERING*/
 .servicio {
   text-align: center;
+  font-family: "Pacifico", cursive;
 }
 
 .catering1 {
   background-color: aquamarine;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.textoCatering {
+  font-family: "Satisfy", cursive;
+  font-size: x-large;
 }
 
 .video {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   display: inline-block;
   margin: 20px;
@@ -309,22 +445,32 @@ footer .map {
 
 /*FORMULARIO DE CONTACTO*/
 .flex__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: aqua;
 }
 
 .mensaje {
   background-color: #00ffff;
   margin: 0%;
+  font-family: "Pacifico", cursive;
 }
 
 .form {
   width: 100%;
   height: 400px;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   text-align: right;
 }
 
@@ -336,7 +482,7 @@ footer .map {
   border: 5px solid #468bb3;
   background: transparent;
   color: black;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: medium;
 }
 
@@ -357,7 +503,9 @@ textarea {
 .imagenEmail {
   width: 400px;
   height: 400px;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding: 10px;
 }
 
@@ -385,6 +533,8 @@ li img {
     height: 50px;
   }
   nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   nav a:hover {
@@ -393,7 +543,10 @@ li img {
   /*PAGES SOBRA?? */
   .pages {
     display: inline;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-left: 145px;
     margin-top: -80px;
     font-size: medium;
@@ -403,6 +556,8 @@ li img {
     display: inline;
   }
   .alifer2 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     width: 65%;
     margin-top: 30px;
@@ -425,20 +580,31 @@ li img {
   /*INDEX - FECHAS IMPORTANTES DE GASTRONOMIA*/
   .festivo {
     height: 180px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .calendar {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     width: 80%;
     margin: auto;
   }
   /*PIE DE PÁGINA */
   .footerIzq {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(aqua), to(lightblue));
     background-image: linear-gradient(to top, aqua, lightblue);
   }
   .Cen {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(aqua), to(lightblue));
     background-image: linear-gradient(to top, aqua, lightblue);
   }
   .redes {
@@ -450,13 +616,15 @@ li img {
     height: 60px;
   }
   /*FESTIVIDADES*/
-  .torta1, .pan1, .huevo {
+  .torta1, .huevo, .pan1 {
     height: 180px;
     width: 180px;
   }
   /* SERVICIO DE CATERING*/
   /*.catering1 sobra??*/
   .catering1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   /*Cambiar x width deñ div padre?*/
@@ -465,20 +633,27 @@ li img {
   }
   .video {
     width: 350px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   /*FORMULARIO DE CONTACTO*/
   .form {
     text-align: center;
   }
   .emailContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .imagenEmail {
     width: 80%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
-
 /*# sourceMappingURL=estilos.css.map */

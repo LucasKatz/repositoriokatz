@@ -90,40 +90,34 @@ main{
         display: flex;
         justify-content: center;
         font-size:xx-large;
-        font-family: $font2;
+        font-family: $font1;
     }
 
     .chefs {
         margin-top: 40px;
         font-family:$font3;
-        font-size: larger;
+        font-size: x-large;
         padding: 2%;
     }
 
     /*INDEX - SLOGAN */
 
     .desafio1 {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-area:
-        ". slogan slogan slogan ."
-        "nos nos nos nos nos";
-        font-style: oblique;
         text-align: center;
-        padding: 20px;
+        padding: 30px;
         background-color: $color3;
-        margin-top: 20px;
     }
 
     .slogan {
         grid-area: slogan;
+        font-family: $font2;
     }
 
     .nos {
         margin-top: 40px;
         grid-area: nos;
         font-family: $font3;
+        font-size: x-large;
     }
 
     /*INDEX - FECHAS IMPORTANTES DE GASTRONOMIA*/
@@ -152,24 +146,40 @@ footer {
 
         .redes {
         font-size: larger;
+        font-family: $font2;
         }
 
         .Instagram {
             list-style: none;
+            font-family: $font2;
         }
 
         .Facebook {
             list-style: none;
-            margin-top: 20px;
-            margin-bottom: 20px;
+            margin: 20px 0px 20px 0px;
+            font-family: $font2;
+        }
+
+        .fa-facebook{
+            margin-right: 5px;
+        }
+
+        .fa-instagram {
+            @extend .fa-facebook
+        }
+
+        .fa-whatsapp {
+            @extend.fa-facebook
         }
 
         .n1{
             list-style:none;
+            font-family: $font2;
         }
 
         .n2{
             list-style:none;
+            font-family: $font2;
         }
 
         .map {
@@ -184,6 +194,7 @@ footer {
         text-align: center;
         background-color: rgb(182, 198, 38);
         margin-bottom: 0%;
+        font-family: $font2;
     }
 
     #galeria{ display: flex;
@@ -202,7 +213,7 @@ footer {
         .title1{
         text-align: center;
         font-size:xx-large;
-        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-family:$font1
         }
 
         .title2{
@@ -373,13 +384,13 @@ footer {
     .serviciosPersonalizados {
         text-align: center;
         font-size: 40px;
-        font-weight: bold;
+        font-family: $font2;
     }
 
     .volanta {
         text-align: center;
-        font-style: normal;
-        font-size: larger;
+        font-family: $font3;
+        font-size: x-large;
     }
 
     /*FESTIVIDADES - CAROUSELES */
@@ -402,11 +413,17 @@ footer {
 
     .servicio {
         text-align: center;
+        font-family: $font2;
     }
 
     .catering1 {
         background-color: aquamarine;
         align-items: center;
+    }
+
+    .textoCatering {
+        font-family: $font3;
+        font-size: x-large;
     }
 
     .video { display: flex;
@@ -427,6 +444,7 @@ footer {
     .mensaje {
         background-color: #00ffff;
         margin: 0%;
+        font-family: $font2;
     }
 
     .form {
