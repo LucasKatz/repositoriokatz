@@ -69,8 +69,8 @@ main .subtitulo {
 }
 
 main .alifer2 {
-  height: 500px;
-  width: 500px;
+  height: 304px;
+  width: 512px;
   margin-left: 20px;
   border: 15px solid;
 }
@@ -559,18 +559,22 @@ li img {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    width: 65%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 30px;
+    border: none;
   }
   .chefs {
     margin-top: 25px;
+    text-align: center;
   }
   .names {
     margin-top: 20px;
   }
   /*INDEX - SLOGAN */
   .desafio1 {
-    height: 350px;
+    height: 550px;
   }
   .slogan {
     margin-top: -25px;
@@ -589,7 +593,9 @@ li img {
     height: -moz-fit-content;
     height: fit-content;
     width: 80%;
-    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   /*PIE DE PÁGINA */
   .footerIzq {
