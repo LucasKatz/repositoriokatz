@@ -58,68 +58,71 @@ width: $width;
 
 main{
 
-    .perfil{
-    background-color: $color1;
-    padding-bottom: 15px;
+    section{
+            background-color: $color1;
+            padding-bottom: 15px;
+
+
+        .subtitulo{
+            text-align: center;
+            margin:15px 0px 35px 0px;
+            font-family:$font2
+        }
+
+        .alifer2 {
+            @include sizes(304px,512px );
+            margin-left: 20px;
+
+            border: map-get($estilos, borde);
+            border: map-get($estilos, color);
+        }
+
+        .names {
+
+            display: flex;
+            justify-content: center;
+            font-size:xx-large;
+            font-family: $font1;
+        }
+
+        .chefs {
+            margin-top: 40px;
+            font-family:$font3;
+            font-size: x-large;
+            padding: 2%;
+        }
+
     }
-
-    .subtitulo{
-        text-align: center;
-        margin:15px 0px 35px 0px;
-        font-family:$font2
-    }
-
-    .alifer2 {
-        @include sizes(304px,512px );
-        margin-left: 20px;
-
-        border: map-get($estilos, borde);
-        border: map-get($estilos, color);
-    }
-
-    .names {
-
-        display: flex;
-        justify-content: center;
-        font-size:xx-large;
-        font-family: $font1;
-    }
-
-    .chefs {
-        margin-top: 40px;
-        font-family:$font3;
-        font-size: x-large;
-        padding: 2%;
-    }
-
     /*INDEX - SLOGAN */
 
-    .desafio1 {
-        text-align: center;
-        padding: 30px;
-        background-color: $color3;
-    }
+        article {
+            text-align: center;
+            padding: 30px;
+            background-color: $color3;
 
-    .slogan {
-        font-family: $font2;
-    }
 
-    .nos {
-        margin-top: 40px;
-        font-family: $font3;
-        font-size: x-large;
+        .slogan {
+            font-family: $font2;
+        }
+
+        .nos {
+            margin-top: 40px;
+            font-family: $font3;
+            font-size: x-large;
+        }
     }
 
     /*INDEX - FECHAS IMPORTANTES DE GASTRONOMIA*/
-    .calendar {
-        margin: 10px;
-    }
 
     .festivo {
         background-color: $color1;
         text-align:center;
         height: 100% ;
         width: 100%;
+
+        .calendar {
+            margin: 10px;
+        }
     }
 }
 /*PIE DE PÁGINA */
@@ -132,7 +135,6 @@ footer {
         font-size: 20px;
         font-style: normal;
         background-image:linear-gradient(to top, aqua, lightblue);
-    }
 
         .redes {
         font-size: larger;
@@ -171,174 +173,187 @@ footer {
             list-style:none;
             font-family: $font2;
         }
+    }
 
-        .map {
-            width: 300px;
-            height: 300px;
+    .Cen {
+
+            .map {
+                width: 300px;
+                height: 300px;
+            }
         }
     }
 
 /*PRODUCTOS - GALERIAS */
 
-        .titles{
-        text-align: center;
-        background-color: rgb(182, 198, 38);
-        font-family: $font2;
+        .titleBar {
+            height: 50px;
+            background-color: rgb(182, 198, 38);
+
+
+            .titles{
+                text-align: center;
+                background-color: rgb(182, 198, 38);
+                font-family: $font2;
+            }
+
         }
 
-    #galeria{ display: flex;
-        background-color: aquamarine;
-        padding-bottom: 25px;
-        height: 650px;
+        #galeria{
+            display: flex;
+            background-color: aquamarine;
+            padding-bottom: 25px;
+            height: 650px;
 
-        .title1{
-        text-align: center;
-        font-size:xx-large;
-        font-family:$font1
+            .title1{
+                text-align: center;
+                font-size:xx-large;
+                font-family:$font1
+            }
+
+            .title2{
+                @extend .title1;
+            }
+
+            .title3{
+                @extend .title1;
+            }
+
+            .title4{
+                @extend .title1;
+            }
+
+            .title5{
+                @extend .title1;
+            }
+
+            img {
+                align-items:center;
+                width: 180px;
+                height: 180px;
+            }
+
+            .brownies1{
+                margin: 5px;
+            }
+
+            .brownies1:hover {
+                transform: scale(1.2);
+            }
+
+            .brownies2 {
+                margin: 5px;
+            }
+
+            .brownies2:hover {
+                transform: scale(1.2);
+            }
+
+            .brownies3{
+                margin: 5px;
+            }
+
+            .brownies3:hover {
+                transform: scale(1.2);
+            }
+
+            .cookies1{
+                margin: 5px;
+            }
+
+            .cookies1:hover {
+                transform: scale(1.2);
+            }
+
+            .cookies2 {
+                margin: 5px;
+            }
+
+            .cookies2:hover {
+                transform: scale(1.2);
+            }
+
+            .cookies3{
+                margin: 5px;
+            }
+
+            .cookies3:hover {
+                transform: scale(1.2);
+            }
+
+            .panificados1{
+                margin: 5px;
+            }
+
+            .panificados1:hover {
+                transform: scale(1.2);
+            }
+
+            .panificados2{
+                margin: 5px;
+            }
+
+            .panificados2:hover {
+                transform: scale(1.2);
+            }
+
+            .panificados3{
+                margin: 5px;
+            }
+
+            .panificados3:hover {
+                transform: scale(1.2);
+            }
+
+            .facturas1{
+                margin: 5px;
+            }
+
+            .facturas1:hover {
+                transform: scale(1.2);
+            }
+
+            .facturas2{
+                margin: 5px;
+            }
+
+            .facturas2:hover {
+                transform: scale(1.2);
+            }
+
+            .facturas3{
+                margin: 5px;
+            }
+
+            .facturas3:hover {
+                transform: scale(1.2);
+            }
+
+            .salado1{
+                margin: 5px;
+            }
+
+            .salado1:hover {
+                transform: scale(1.2);
+            }
+
+            .salado2{
+                margin: 5px;
+            }
+
+            .salado2:hover {
+                transform: scale(1.2);
+            }
+
+            .salado3{
+                margin: 5px;
+            }
+
+            .salado3:hover {
+                transform: scale(1.2);
+            }
         }
 
-        .title2{
-            @extend .title1;
-        }
-
-        .title3{
-            @extend .title1;
-        }
-
-        .title4{
-            @extend .title1;
-        }
-
-        .title5{
-            @extend .title1;
-        }
-
-        img {
-        align-items:center;
-        width: 180px;
-        height: 180px;
-        }
-
-        .brownies1{
-        margin: 5px;
-        }
-
-        .brownies1:hover {
-        transform: scale(1.2);
-        }
-
-        .brownies2 {
-            margin: 5px;
-        }
-
-        .brownies2:hover {
-            transform: scale(1.2);
-        }
-
-        .brownies3{
-            margin: 5px;
-        }
-
-        .brownies3:hover {
-            transform: scale(1.2);
-        }
-
-        .cookies1{
-            margin: 5px;
-        }
-
-        .cookies1:hover {
-        transform: scale(1.2);
-        }
-
-        .cookies2 {
-            margin: 5px;
-        }
-
-        .cookies2:hover {
-            transform: scale(1.2);
-        }
-
-        .cookies3{
-            margin: 5px;
-        }
-
-        .cookies3:hover {
-            transform: scale(1.2);
-        }
-
-        .panificados1{
-            margin: 5px;
-        }
-
-        .panificados1:hover {
-        transform: scale(1.2);
-        }
-
-        .panificados2{
-            margin: 5px;
-        }
-
-        .panificados2:hover {
-            transform: scale(1.2);
-        }
-
-        .panificados3{
-            margin: 5px;
-        }
-
-        .panificados3:hover {
-            transform: scale(1.2);
-        }
-
-        .facturas1{
-            margin: 5px;
-        }
-
-        .facturas1:hover {
-            transform: scale(1.2);
-        }
-
-        .facturas2{
-            margin: 5px;
-        }
-
-        .facturas2:hover {
-            transform: scale(1.2);
-        }
-
-        .facturas3{
-            margin: 5px;
-        }
-
-        .facturas3:hover {
-            transform: scale(1.2);
-        }
-
-        .salado1{
-            margin: 5px;
-        }
-
-        .salado1:hover {
-            transform: scale(1.2);
-        }
-
-        .salado2{
-            margin: 5px;
-        }
-
-        .salado2:hover {
-            transform: scale(1.2);
-        }
-
-        .salado3{
-            margin: 5px;
-        }
-
-        .salado3:hover {
-            transform: scale(1.2);
-        }
-    }
 
     /*FESTIVIDADES - INFORMACIÓN GENERAL */
 
@@ -377,7 +392,7 @@ footer {
 
 
     #carouselExampleControls3{
-      @extend #carouselExampleControls;
+    @extend #carouselExampleControls;
     }
 
 /*SERVICIO DE CATERING*/
@@ -583,7 +598,7 @@ footer {
         "salado1 ."
         "salado2 ."
         "salado3 .";
-        height: 1500px;
+        height: 1300px;
 
         img{
             height: 120px;
@@ -593,27 +608,30 @@ footer {
         .title1{
             text-align: center;
             font-size:x-large;
-            font-family:$font1;
             grid-area:budines;
             }
 
             .title2{
-                @extend .title1;
-                grid-area:cookies
+                text-align: center;
+                font-size:x-large;
+                grid-area:cookies;
             }
 
             .title3{
-                @extend .title1;
+                text-align: center;
+                font-size:x-large;
                 grid-area:panaderia;
             }
 
             .title4{
-                @extend .title1;
+                text-align: center;
+                font-size:x-large;
                 grid-area:facturas;
             }
 
             .title5{
-                @extend .title1;
+                text-align: center;
+                font-size:x-large;
                 grid-area:salado;
             }
 
