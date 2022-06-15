@@ -27,6 +27,12 @@ nav li {
   font-size: larger;
   margin: 4px;
 }
+nav .boton {
+  width: 180px;
+  text-align: center;
+  font-size: x-large;
+  background-color: aquamarine;
+}
 
 /*INDEX - DATOS PERSONALES */
 main {
@@ -241,6 +247,7 @@ footer .Cen .map {
 .productosFestivos {
   background-color: aquamarine;
   padding: 10px;
+  /*FESTIVIDADES - CAROUSELES */
 }
 .productosFestivos h2 {
   font-family: "Satisfy", cursive;
@@ -256,30 +263,26 @@ footer .Cen .map {
   font-family: "Satisfy", cursive;
   font-size: x-large;
 }
-
-/*FESTIVIDADES - CAROUSELES */
-#carouselExampleControls, #carouselExampleControls3, #carouselExampleControls2 {
+.productosFestivos #carouselExampleControls, .productosFestivos #carouselExampleControls3, .productosFestivos #carouselExampleControls2 {
   text-align: center;
   margin-bottom: 20px;
 }
-
 /*SERVICIO DE CATERING*/
-.servicio {
+article {
+  background-color: aquamarine;
+}
+article .servicio {
   text-align: center;
   font-family: "Pacifico", cursive;
 }
-
-.catering1 {
-  background-color: aquamarine;
+article .catering1 {
   align-items: center;
 }
-
-.textoCatering {
+article .textoCatering {
   font-family: "Satisfy", cursive;
   font-size: x-large;
 }
-
-.video {
+article .video {
   display: flex;
   display: inline-block;
   margin: 20px;
@@ -288,15 +291,15 @@ footer .Cen .map {
 /*FORMULARIO DE CONTACTO*/
 .flex__container {
   display: flex;
-  align-items: center;
+  text-align: center;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: aqua;
+  background-color: #00ffff;
 }
 
 .mensaje {
-  background-color: #00ffff;
   font-family: "Pacifico", cursive;
+  background-color: #00ffff;
 }
 
 .form {
@@ -344,14 +347,7 @@ li img {
   width: 180px;
 }
 
-.boton {
-  width: 180px;
-  text-align: center;
-  font-size: x-large;
-  background-color: aquamarine;
-}
-
-/*ADAPTACION MOBILE - MEDIA QUERIES*/
+/*ADAPTACION MOBILE - MEDIA QUERIES - ADAPTACION MOBILE - MEDIA QUERIES*/
 @media screen and (max-width: 380px) {
   /*BARRA DE NAVEGACIÓN*/
   header {
@@ -410,13 +406,13 @@ li img {
     flex-direction: column;
     background-image: linear-gradient(to top, aqua, lightblue);
   }
+  .footerIzq .redes {
+    display: inline;
+  }
   .Cen {
     background-image: linear-gradient(to top, aqua, lightblue);
   }
-  .redes {
-    display: inline;
-  }
-  .map {
+  .Cen .map {
     margin-top: 45px;
     width: 60px;
     height: 60px;

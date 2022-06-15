@@ -40,6 +40,13 @@ nav li {
   margin: 4px;
 }
 
+nav .boton {
+  width: 180px;
+  text-align: center;
+  font-size: x-large;
+  background-color: aquamarine;
+}
+
 /*INDEX - DATOS PERSONALES */
 main {
   /*INDEX - SLOGAN */
@@ -329,6 +336,7 @@ footer .Cen .map {
 .productosFestivos {
   background-color: aquamarine;
   padding: 10px;
+  /*FESTIVIDADES - CAROUSELES */
 }
 
 .productosFestivos h2 {
@@ -348,31 +356,33 @@ footer .Cen .map {
   font-size: x-large;
 }
 
-/*FESTIVIDADES - CAROUSELES */
-#carouselExampleControls, #carouselExampleControls2, #carouselExampleControls3 {
+.productosFestivos #carouselExampleControls, .productosFestivos #carouselExampleControls2, .productosFestivos #carouselExampleControls3 {
   text-align: center;
   margin-bottom: 20px;
 }
 
 /*SERVICIO DE CATERING*/
-.servicio {
+article {
+  background-color: aquamarine;
+}
+
+article .servicio {
   text-align: center;
   font-family: "Pacifico", cursive;
 }
 
-.catering1 {
-  background-color: aquamarine;
+article .catering1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.textoCatering {
+article .textoCatering {
   font-family: "Satisfy", cursive;
   font-size: x-large;
 }
 
-.video {
+article .video {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,20 +395,18 @@ footer .Cen .map {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: aqua;
+  background-color: #00ffff;
 }
 
 .mensaje {
-  background-color: #00ffff;
   font-family: "Pacifico", cursive;
+  background-color: #00ffff;
 }
 
 .form {
@@ -450,14 +458,7 @@ li img {
   width: 180px;
 }
 
-.boton {
-  width: 180px;
-  text-align: center;
-  font-size: x-large;
-  background-color: aquamarine;
-}
-
-/*ADAPTACION MOBILE - MEDIA QUERIES*/
+/*ADAPTACION MOBILE - MEDIA QUERIES - ADAPTACION MOBILE - MEDIA QUERIES*/
 @media screen and (max-width: 380px) {
   /*BARRA DE NAVEGACIÓN*/
   header {
@@ -534,14 +535,14 @@ li img {
     background-image: -webkit-gradient(linear, left bottom, left top, from(aqua), to(lightblue));
     background-image: linear-gradient(to top, aqua, lightblue);
   }
+  .footerIzq .redes {
+    display: inline;
+  }
   .Cen {
     background-image: -webkit-gradient(linear, left bottom, left top, from(aqua), to(lightblue));
     background-image: linear-gradient(to top, aqua, lightblue);
   }
-  .redes {
-    display: inline;
-  }
-  .map {
+  .Cen .map {
     margin-top: 45px;
     width: 60px;
     height: 60px;

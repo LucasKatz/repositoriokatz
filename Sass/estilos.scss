@@ -48,6 +48,13 @@ nav{
     font-size: larger;
     margin: 4px;
     }
+
+    .boton {
+        width: 180px;
+        text-align: center;
+        font-size: x-large;
+        background-color: aquamarine;
+    }
 }
 
 /*INDEX - DATOS PERSONALES */
@@ -377,59 +384,65 @@ footer {
             font-family: $font3;
             font-size: x-large;
         }
-    }
+
     /*FESTIVIDADES - CAROUSELES */
 
-    #carouselExampleControls {
-        text-align: center;
-        margin-bottom: 20px;
+        #carouselExampleControls {
+            text-align: center;
+            margin-bottom: 20px;
 
-    }
+        }
 
-    #carouselExampleControls2{
-    @extend #carouselExampleControls;
-    }
+        #carouselExampleControls2{
+            @extend #carouselExampleControls;
+        }
 
 
-    #carouselExampleControls3{
-    @extend #carouselExampleControls;
+        #carouselExampleControls3{
+            @extend #carouselExampleControls;
+        }
+
     }
 
 /*SERVICIO DE CATERING*/
+article{
 
-    .servicio {
-        text-align: center;
-        font-family: $font2;
-    }
+    background-color: aquamarine;
 
-    .catering1 {
-        background-color: aquamarine;
-        align-items: center;
-    }
+        .servicio {
+            text-align: center;
+            font-family: $font2;
+        }
 
-    .textoCatering {
-        font-family: $font3;
-        font-size: x-large;
-    }
+        .catering1 {
+            align-items: center;
+        }
 
-    .video { display: flex;
-        display: inline-block;
-        margin: 20px;
-    }
+        .textoCatering {
+            font-family: $font3;
+            font-size: x-large;
+        }
+
+        .video {
+            display: flex;
+            display: inline-block;
+            margin: 20px;
+        }
+}
 
     /*FORMULARIO DE CONTACTO*/
 
     .flex__container {
         display: flex;
-        align-items: center;
+        text-align: center;
         flex-wrap: wrap;
         justify-content: center;
-        background-color: aqua;
+        background-color: #00ffff;
     }
 
     .mensaje {
-        background-color: #00ffff;
         font-family: $font2;
+        background-color: #00ffff;
     }
 
     .form {
@@ -476,14 +489,7 @@ footer {
         width: 180px ;
     }
 
-    .boton {
-        width: 180px;
-        text-align: center;
-        font-size: x-large;
-        background-color: aquamarine;
-    }
-
-/*ADAPTACION MOBILE - MEDIA QUERIES*/
+/*ADAPTACION MOBILE - MEDIA QUERIES - ADAPTACION MOBILE - MEDIA QUERIES*/
 
     @media screen and (max-width: 380px)
     {
@@ -561,20 +567,20 @@ footer {
         display: flex;
         flex-direction: column;
         background-image:linear-gradient(to top, aqua, lightblue);
+
+        .redes {
+                display: inline;
+        }
     }
 
     .Cen {
         background-image:linear-gradient(to top, aqua, lightblue);
-    }
 
-    .redes {
-        display: inline;
-    }
-
-    .map {
-        margin-top: 45px;
-        width: 60px;
-        height: 60px;
+        .map {
+            margin-top: 45px;
+            width: 60px;
+            height: 60px;
+        }
     }
 
     /* PRODUCTOS RESPONSIVE*/
