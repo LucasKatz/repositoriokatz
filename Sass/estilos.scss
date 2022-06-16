@@ -72,7 +72,7 @@ main{
 
         .subtitulo{
             text-align: center;
-            margin:15px 0px 35px 0px;
+            margin-left:0px ;
             font-family:$font2
         }
 
@@ -522,8 +522,8 @@ article{
     .alifer2 {
         height: fit-content;
         align-items: center;
-        margin-top: 30px;
-        border: none;
+        margin-left: 0px !important;
+        border: 0ch;
     }
 
 
@@ -553,12 +553,12 @@ article{
     .festivo {
         height: 180px;
         display: flex;
+        justify-content: center;
     }
 
     .calendar {
         height: fit-content;
         width: 80%;
-        align-items: center;
     }
 
     /*PIE DE PÁGINA */
@@ -575,9 +575,10 @@ article{
 
     .Cen {
         background-image:linear-gradient(to top, aqua, lightblue);
+        justify-items: center;
 
         .map {
-            margin-top: 45px;
+            margin: 40px 30px 40px 30px;
             width: 60px;
             height: 60px;
         }

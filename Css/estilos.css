@@ -45,7 +45,7 @@ main section {
 }
 main section .subtitulo {
   text-align: center;
-  margin: 15px 0px 35px 0px;
+  margin-left: 0px;
   font-family: "Pacifico", cursive;
 }
 main section .alifer2 {
@@ -371,8 +371,8 @@ li img {
   .alifer2 {
     height: fit-content;
     align-items: center;
-    margin-top: 30px;
-    border: none;
+    margin-left: 0px !important;
+    border: 0ch;
   }
   .chefs {
     margin-top: 25px;
@@ -394,11 +394,11 @@ li img {
   .festivo {
     height: 180px;
     display: flex;
+    justify-content: center;
   }
   .calendar {
     height: fit-content;
     width: 80%;
-    align-items: center;
   }
   /*PIE DE PÁGINA */
   .footerIzq {
@@ -411,9 +411,10 @@ li img {
   }
   .Cen {
     background-image: linear-gradient(to top, aqua, lightblue);
+    justify-items: center;
   }
   .Cen .map {
-    margin-top: 45px;
+    margin: 40px 30px 40px 30px;
     width: 60px;
     height: 60px;
   }

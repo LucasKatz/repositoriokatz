@@ -60,7 +60,7 @@ main section {
 
 main section .subtitulo {
   text-align: center;
-  margin: 15px 0px 35px 0px;
+  margin-left: 0px;
   font-family: "Pacifico", cursive;
 }
 
@@ -488,8 +488,8 @@ li img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 30px;
-    border: none;
+    margin-left: 0px !important;
+    border: 0ch;
   }
   .chefs {
     margin-top: 25px;
@@ -513,15 +513,15 @@ li img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .calendar {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     width: 80%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   /*PIE DE PÁGINA */
   .footerIzq {
@@ -541,9 +541,10 @@ li img {
   .Cen {
     background-image: -webkit-gradient(linear, left bottom, left top, from(aqua), to(lightblue));
     background-image: linear-gradient(to top, aqua, lightblue);
+    justify-items: center;
   }
   .Cen .map {
-    margin-top: 45px;
+    margin: 40px 30px 40px 30px;
     width: 60px;
     height: 60px;
   }
