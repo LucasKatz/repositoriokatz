@@ -432,7 +432,7 @@ li img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(12, 1fr);
-    grid-template-areas: "budines   cookies" "brownies1 cookies1" "brownies2 cookies2" "brownies3 cookies3" "panaderia facturas" "panificados 1 facturas 1" "panificados2 facturas2" "panificados3 facturas3" ". salado" ". salado1" ". salado2" ". salado3";
+    grid-template-areas: "budines   cookies" "brownies1 cookies1" "brownies2 cookies2" "brownies3 cookies3" "panaderia facturas" "panificados 1 facturas 1" "panificados2 facturas2" "panificados3 facturas3" ".            salado" ".            salado1" ".            salado2" ".            salado3";
     height: 1300px;
   }
   #galeria img {
