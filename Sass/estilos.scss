@@ -30,7 +30,7 @@ nav{
     font-size: larger;
 
     &:hover {
-        color:black;
+        color:blue;
         }
 
     ul {
@@ -108,12 +108,12 @@ main{
         article {
             text-align: center;
             background-image:linear-gradient(to left,white, #b17f48);
+            height: 250px;
 
 
         .slogan {
             font-family: $font2;
             text-align: center;
-
             background-color: rgb(177, 127, 72);
             padding: 8px;
             color: white;

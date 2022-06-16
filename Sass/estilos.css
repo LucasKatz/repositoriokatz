@@ -14,7 +14,7 @@ nav {
 }
 
 nav:hover {
-  color: black;
+  color: blue;
 }
 
 nav ul {
@@ -95,6 +95,7 @@ main article {
   text-align: center;
   background-image: -webkit-gradient(linear, right top, left top, from(white), to(#b17f48));
   background-image: linear-gradient(to left, white, #b17f48);
+  height: 250px;
 }
 
 main article .slogan {

@@ -12,7 +12,7 @@ nav {
   font-size: larger;
 }
 nav:hover {
-  color: black;
+  color: blue;
 }
 nav ul {
   display: flex;
@@ -73,6 +73,7 @@ main section .chefs {
 main article {
   text-align: center;
   background-image: linear-gradient(to left, white, #b17f48);
+  height: 250px;
 }
 main article .slogan {
   font-family: "Pacifico", cursive;
