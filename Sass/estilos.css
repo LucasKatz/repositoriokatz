@@ -700,6 +700,9 @@ li img {
     width: 180px;
   }
   /* SERVICIO DE CATERING*/
+  .textoCatering {
+    text-align: center;
+  }
   .video {
     width: 350px;
     -webkit-box-align: center;
