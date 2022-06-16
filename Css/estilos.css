@@ -47,6 +47,9 @@ main section .subtitulo {
   margin-left: 0px;
   margin-bottom: 20px;
   font-family: "Pacifico", cursive;
+  background-color: rgb(177, 127, 72);
+  padding: 8px;
+  color: white;
 }
 main section .alifer2 {
   height: 304px;
@@ -69,14 +72,16 @@ main section .chefs {
 }
 main article {
   text-align: center;
-  padding: 30px;
   background-image: linear-gradient(to left, white, #b17f48);
 }
 main article .slogan {
   font-family: "Pacifico", cursive;
+  text-align: center;
+  background-color: rgb(177, 127, 72);
+  padding: 8px;
+  color: white;
 }
 main article .nos {
-  margin-top: 40px;
   font-family: "Satisfy", cursive;
   font-size: x-large;
 }
