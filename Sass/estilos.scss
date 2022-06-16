@@ -243,7 +243,6 @@ footer {
             }
 
             img {
-                align-items:center;
                 width: 180px;
                 height: 180px;
             }
@@ -611,13 +610,14 @@ article{
         "panificados 1 facturas 1"
         "panificados2 facturas2"
         "panificados3 facturas3"
-        "salado ."
-        "salado1 ."
-        "salado2 ."
-        "salado3 .";
+        ". salado"
+        ". salado1"
+        ". salado2"
+        ". salado3";
         height: 1300px;
 
         img{
+            justify-items: center;
             height: 120px;
             width: 120px;
         }
@@ -652,21 +652,35 @@ article{
                 grid-area:salado;
             }
 
+            .brownies{
+                margin-left: 22px;
+            }
+
+            .cookies{
+                margin-left: 22px;
+            }
+
+            .panes{
+                margin-left: 22px;
+            }
+
+            .facturas{
+                margin-left: 22px;
+            }
+
+
             .brownies1{
             grid-area: brownies1;
-            margin: 5px;
             }
 
 
             .brownies2 {
                 grid-area: brownies2;
-                margin: 5px;
             }
 
 
             .brownies3{
                 grid-area: brownies3;
-                margin: 5px;
             }
 
             .cookies1{

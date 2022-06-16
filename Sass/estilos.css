@@ -200,9 +200,6 @@ footer .Cen .map {
 }
 
 #galeria img {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 180px;
   height: 180px;
 }
@@ -570,10 +567,11 @@ li img {
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: (1fr)[12];
         grid-template-rows: repeat(12, 1fr);
-        grid-template-areas: "budines   cookies" "brownies1 cookies1" "brownies2 cookies2" "brownies3 cookies3" "panaderia facturas" "panificados 1 facturas 1" "panificados2 facturas2" "panificados3 facturas3" "salado ." "salado1 ." "salado2 ." "salado3 .";
+        grid-template-areas: "budines   cookies" "brownies1 cookies1" "brownies2 cookies2" "brownies3 cookies3" "panaderia facturas" "panificados 1 facturas 1" "panificados2 facturas2" "panificados3 facturas3" ". salado" ". salado1" ". salado2" ". salado3";
     height: 1300px;
   }
   #galeria img {
+    justify-items: center;
     height: 120px;
     width: 120px;
   }
@@ -611,26 +609,35 @@ li img {
     text-align: center;
     font-size: x-large;
     -ms-grid-row: 9;
-    -ms-grid-column: 1;
+    -ms-grid-column: 2;
     grid-area: salado;
+  }
+  #galeria .brownies {
+    margin-left: 22px;
+  }
+  #galeria .cookies {
+    margin-left: 22px;
+  }
+  #galeria .panes {
+    margin-left: 22px;
+  }
+  #galeria .facturas {
+    margin-left: 22px;
   }
   #galeria .brownies1 {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: brownies1;
-    margin: 5px;
   }
   #galeria .brownies2 {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: brownies2;
-    margin: 5px;
   }
   #galeria .brownies3 {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: brownies3;
-    margin: 5px;
   }
   #galeria .cookies1 {
     -ms-grid-row: 2;
@@ -684,19 +691,19 @@ li img {
   }
   #galeria .salado1 {
     -ms-grid-row: 10;
-    -ms-grid-column: 1;
+    -ms-grid-column: 2;
     grid-area: salado1;
     margin: 5px;
   }
   #galeria .salado2 {
     -ms-grid-row: 11;
-    -ms-grid-column: 1;
+    -ms-grid-column: 2;
     grid-area: salado2;
     margin: 5px;
   }
   #galeria .salado3 {
     -ms-grid-row: 12;
-    -ms-grid-column: 1;
+    -ms-grid-column: 2;
     grid-area: salado3;
     margin: 5px;
   }

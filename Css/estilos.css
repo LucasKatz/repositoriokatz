@@ -157,7 +157,6 @@ footer .Cen .map {
   font-family: "Indie Flower", cursive;
 }
 #galeria img {
-  align-items: center;
   width: 180px;
   height: 180px;
 }
@@ -433,10 +432,11 @@ li img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(12, 1fr);
-    grid-template-areas: "budines   cookies" "brownies1 cookies1" "brownies2 cookies2" "brownies3 cookies3" "panaderia facturas" "panificados 1 facturas 1" "panificados2 facturas2" "panificados3 facturas3" "salado ." "salado1 ." "salado2 ." "salado3 .";
+    grid-template-areas: "budines   cookies" "brownies1 cookies1" "brownies2 cookies2" "brownies3 cookies3" "panaderia facturas" "panificados 1 facturas 1" "panificados2 facturas2" "panificados3 facturas3" ". salado" ". salado1" ". salado2" ". salado3";
     height: 1300px;
   }
   #galeria img {
+    justify-items: center;
     height: 120px;
     width: 120px;
   }
@@ -465,17 +465,26 @@ li img {
     font-size: x-large;
     grid-area: salado;
   }
+  #galeria .brownies {
+    margin-left: 22px;
+  }
+  #galeria .cookies {
+    margin-left: 22px;
+  }
+  #galeria .panes {
+    margin-left: 22px;
+  }
+  #galeria .facturas {
+    margin-left: 22px;
+  }
   #galeria .brownies1 {
     grid-area: brownies1;
-    margin: 5px;
   }
   #galeria .brownies2 {
     grid-area: brownies2;
-    margin: 5px;
   }
   #galeria .brownies3 {
     grid-area: brownies3;
-    margin: 5px;
   }
   #galeria .cookies1 {
     grid-area: cookies1;
