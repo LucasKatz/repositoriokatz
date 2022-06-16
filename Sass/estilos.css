@@ -13,10 +13,6 @@ nav {
   font-size: larger;
 }
 
-nav .boton {
-  font-family: "Indie Flower", cursive;
-}
-
 nav:hover {
   color: black;
 }
@@ -29,9 +25,6 @@ nav ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 nav li {
@@ -44,7 +37,10 @@ nav .boton {
   width: 180px;
   text-align: center;
   font-size: x-large;
-  background-color: aquamarine;
+  background-color: #b17f48;
+  color: #56381f;
+  font-family: "Indie Flower", cursive;
+  font-weight: bolder;
 }
 
 /*INDEX - DATOS PERSONALES */
@@ -54,13 +50,15 @@ main {
 }
 
 main section {
-  background-color: aquamarine;
+  background-image: -webkit-gradient(linear, left top, right top, from(white), to(#b17f48));
+  background-image: linear-gradient(to right, white, #b17f48);
   padding-bottom: 15px;
 }
 
 main section .subtitulo {
   text-align: center;
   margin-left: 0px;
+  margin-bottom: 20px;
   font-family: "Pacifico", cursive;
 }
 
@@ -87,12 +85,14 @@ main section .chefs {
   font-family: "Satisfy", cursive;
   font-size: x-large;
   padding: 2%;
+  text-align: justify;
 }
 
 main article {
   text-align: center;
   padding: 30px;
-  background-color: #86f3dc;
+  background-image: -webkit-gradient(linear, right top, left top, from(white), to(#b17f48));
+  background-image: linear-gradient(to left, white, #b17f48);
 }
 
 main article .slogan {
@@ -106,14 +106,15 @@ main article .nos {
 }
 
 main .festivo {
-  background-color: aquamarine;
+  background-image: -webkit-gradient(linear, left top, right top, from(white), to(#b17f48));
+  background-image: linear-gradient(to right, white, #b17f48);
   text-align: center;
   height: 100%;
   width: 100%;
 }
 
 main .festivo .calendar {
-  margin: 10px;
+  margin: 20px;
 }
 
 /*PIE DE PÁGINA */
@@ -123,8 +124,10 @@ footer #fondoFooter {
   display: flex;
   font-size: 20px;
   font-style: normal;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(aqua), to(lightblue));
-  background-image: linear-gradient(to top, aqua, lightblue);
+  background-color: #56381f;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer #fondoFooter .redes {
@@ -158,6 +161,7 @@ footer #fondoFooter .n2 {
 }
 
 footer .Cen .map {
+  margin-top: 20px;
   width: 300px;
   height: 300px;
 }
@@ -165,20 +169,20 @@ footer .Cen .map {
 /*PRODUCTOS - GALERIAS */
 .titleBar {
   height: 50px;
-  background-color: #b6c626;
+  background-color: #b17f48;
 }
 
 .titleBar .titles {
+  padding: 8px;
   text-align: center;
-  background-color: #b6c626;
   font-family: "Pacifico", cursive;
+  color: white;
 }
 
 #galeria {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: aquamarine;
   padding-bottom: 25px;
   height: 650px;
 }
@@ -334,20 +338,23 @@ footer .Cen .map {
 
 /*FESTIVIDADES - INFORMACIÓN GENERAL */
 .productosFestivos {
-  background-color: aquamarine;
-  padding: 10px;
+  background-image: -webkit-gradient(linear, right top, left top, from(white), to(#b17f48));
+  background-image: linear-gradient(to left, white, #b17f48);
   /*FESTIVIDADES - CAROUSELES */
+}
+
+.productosFestivos .serviciosPersonalizados {
+  text-align: center;
+  padding: 8px;
+  font-size: 40px;
+  font-family: "Pacifico", cursive;
+  background-color: #b17f48;
+  color: white;
 }
 
 .productosFestivos h2 {
   font-family: "Satisfy", cursive;
   font-weight: bolder;
-}
-
-.productosFestivos .serviciosPersonalizados {
-  text-align: center;
-  font-size: 40px;
-  font-family: "Pacifico", cursive;
 }
 
 .productosFestivos .volanta {
@@ -358,17 +365,21 @@ footer .Cen .map {
 
 .productosFestivos #carouselExampleControls, .productosFestivos #carouselExampleControls2, .productosFestivos #carouselExampleControls3 {
   text-align: center;
-  margin-bottom: 20px;
+  padding: 10px;
 }
 
 /*SERVICIO DE CATERING*/
 article {
-  background-color: aquamarine;
+  background-image: -webkit-gradient(linear, right top, left top, from(white), to(#b17f48));
+  background-image: linear-gradient(to left, white, #b17f48);
 }
 
-article .servicio {
+article .servicio, article .mensaje {
+  background-color: #b17f48;
   text-align: center;
   font-family: "Pacifico", cursive;
+  color: white;
+  padding: 8px;
 }
 
 article .catering1 {
@@ -401,12 +412,8 @@ article .video {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #00ffff;
-}
-
-.mensaje {
-  font-family: "Pacifico", cursive;
-  background-color: #00ffff;
+  background-image: -webkit-gradient(linear, left top, right top, from(white), to(#b17f48));
+  background-image: linear-gradient(to right, white, #b17f48);
 }
 
 .form {
@@ -423,9 +430,9 @@ article .video {
   margin: 7px;
   padding: 7px;
   border: none;
-  border: 5px solid #468bb3;
+  border: 5px solid #b17f48;
   background: transparent;
-  color: black;
+  color: white;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: medium;
 }
@@ -435,7 +442,7 @@ article .video {
 }
 
 .form__input:focus {
-  background-color: #61bdf2;
+  background-color: #b17f48;
   outline: none;
 }
 
@@ -532,15 +539,11 @@ li img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(aqua), to(lightblue));
-    background-image: linear-gradient(to top, aqua, lightblue);
   }
   .footerIzq .redes {
     display: inline;
   }
   .Cen {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(aqua), to(lightblue));
-    background-image: linear-gradient(to top, aqua, lightblue);
     justify-items: center;
   }
   .Cen .map {
