@@ -4,28 +4,37 @@
 /*MODIFICADORES UNIVERSALES */
 * {
   margin: 0%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /*BARRA DE NAVEGACIÓN*/
 nav {
   font-size: larger;
 }
+
 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
+
 nav li {
   display: inline;
   font-size: larger;
   margin: 4px;
 }
+
 nav .boton {
   width: 180px;
   text-align: center;
   font-size: x-large;
-  background-color: rgb(177, 127, 72);
-  color: rgb(86, 56, 31);
+  background-color: #b17f48;
+  color: #56381f;
   font-family: "Indie Flower", cursive;
   font-weight: bolder;
 }
@@ -36,29 +45,39 @@ nav .boton {
   /*INDEX - SLOGAN */
   /*INDEX - FECHAS IMPORTANTES DE GASTRONOMIA*/
 }
+
 .info section {
+  background-image: -webkit-gradient(linear, left top, right top, from(white), to(#b17f48));
   background-image: linear-gradient(to right, white, #b17f48);
   padding-bottom: 15px;
 }
+
 .info section .subtitulo {
   text-align: center;
   margin-bottom: 20px;
   font-family: "Pacifico", cursive;
-  background-color: rgb(177, 127, 72);
+  background-color: #b17f48;
   padding: 8px;
   color: white;
 }
+
 .info section .alifer2 {
   height: 304px;
   width: 512px;
   margin-left: 20px;
 }
+
 .info section .names {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: xx-large;
   font-family: "Indie Flower", cursive;
 }
+
 .info section .chefs {
   margin-top: 40px;
   font-family: "Satisfy", cursive;
@@ -66,63 +85,79 @@ nav .boton {
   padding: 2%;
   text-align: justify;
 }
+
 .info article {
   text-align: center;
+  background-image: -webkit-gradient(linear, right top, left top, from(white), to(#b17f48));
   background-image: linear-gradient(to left, white, #b17f48);
   height: 250px;
 }
+
 .info article .slogan {
   font-family: "Pacifico", cursive;
   text-align: center;
-  background-color: rgb(177, 127, 72);
+  background-color: #b17f48;
   padding: 8px;
   color: white;
 }
+
 .info article .nos {
   font-family: "Satisfy", cursive;
   font-size: x-large;
 }
+
 .info .festivo {
+  background-image: -webkit-gradient(linear, left top, right top, from(white), to(#b17f48));
   background-image: linear-gradient(to right, white, #b17f48);
   text-align: center;
   height: 50%;
   width: 100%;
 }
+
 .info .festivo .calendar {
   margin: 20px;
 }
 
 /*PIE DE PÁGINA */
 footer #fondoFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 20px;
   font-style: normal;
-  background-color: rgb(86, 56, 31);
+  background-color: #56381f;
 }
+
 footer #fondoFooter .redes {
   font-size: larger;
   font-family: "Pacifico", cursive;
 }
+
 footer #fondoFooter .Instagram {
   list-style: none;
   font-family: "Pacifico", cursive;
 }
+
 footer #fondoFooter .Facebook {
   list-style: none;
   margin: 20px 0px 20px 0px;
   font-family: "Pacifico", cursive;
 }
-footer #fondoFooter .fa-facebook, footer #fondoFooter .fa-whatsapp, footer #fondoFooter .fa-instagram {
+
+footer #fondoFooter .fa-facebook, footer #fondoFooter .fa-instagram, footer #fondoFooter .fa-whatsapp {
   margin-right: 5px;
 }
+
 footer #fondoFooter .n1 {
   list-style: none;
   font-family: "Pacifico", cursive;
 }
+
 footer #fondoFooter .n2 {
   list-style: none;
   font-family: "Pacifico", cursive;
 }
+
 footer .Cen .map {
   margin-top: 20px;
   width: 300px;
@@ -132,8 +167,9 @@ footer .Cen .map {
 /*PRODUCTOS - GALERIAS */
 .titleBar {
   height: 60px;
-  background-color: rgb(177, 127, 72);
+  background-color: #b17f48;
 }
+
 .titleBar .titles {
   padding: 8px;
   font-size: 40px;
@@ -143,159 +179,223 @@ footer .Cen .map {
 }
 
 #galeria {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-bottom: 25px;
   height: 650px;
 }
-#galeria .title1, #galeria .title5, #galeria .title4, #galeria .title3, #galeria .title2 {
+
+#galeria .title1, #galeria .title2, #galeria .title3, #galeria .title4, #galeria .title5 {
   text-align: center;
   font-size: xx-large;
   font-family: "Indie Flower", cursive;
 }
+
 #galeria img {
   width: 180px;
   height: 180px;
 }
+
 #galeria .brownies1 {
   margin: 5px;
 }
+
 #galeria .brownies1:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .brownies2 {
   margin: 5px;
 }
+
 #galeria .brownies2:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .brownies3 {
   margin: 5px;
 }
+
 #galeria .brownies3:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .cookies1 {
   margin: 5px;
 }
+
 #galeria .cookies1:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .cookies2 {
   margin: 5px;
 }
+
 #galeria .cookies2:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .cookies3 {
   margin: 5px;
 }
+
 #galeria .cookies3:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .panificados1 {
   margin: 5px;
 }
+
 #galeria .panificados1:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .panificados2 {
   margin: 5px;
 }
+
 #galeria .panificados2:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .panificados3 {
   margin: 5px;
 }
+
 #galeria .panificados3:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .facturas1 {
   margin: 5px;
 }
+
 #galeria .facturas1:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .facturas2 {
   margin: 5px;
 }
+
 #galeria .facturas2:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .facturas3 {
   margin: 5px;
 }
+
 #galeria .facturas3:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .salado1 {
   margin: 5px;
 }
+
 #galeria .salado1:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .salado2 {
   margin: 5px;
 }
+
 #galeria .salado2:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 #galeria .salado3 {
   margin: 5px;
 }
+
 #galeria .salado3:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 /*FESTIVIDADES - INFORMACIÓN GENERAL */
 .productosFestivos {
+  background-image: -webkit-gradient(linear, right top, left top, from(white), to(#b17f48));
   background-image: linear-gradient(to left, white, #b17f48);
   height: 1800px;
   /*FESTIVIDADES - CAROUSELES */
 }
+
 .productosFestivos .serviciosPersonalizados {
   text-align: center;
   padding: 8px;
   font-size: 40px;
   font-family: "Pacifico", cursive;
-  background-color: rgb(177, 127, 72);
+  background-color: #b17f48;
   color: white;
 }
+
 .productosFestivos h2 {
   font-family: "Satisfy", cursive;
   font-weight: bolder;
 }
+
 .productosFestivos .volanta {
   text-align: center;
   font-family: "Satisfy", cursive;
   font-size: x-large;
 }
-.productosFestivos #carouselExampleControls, .productosFestivos #carouselExampleControls3, .productosFestivos #carouselExampleControls2 {
+
+.productosFestivos #carouselExampleControls, .productosFestivos #carouselExampleControls2, .productosFestivos #carouselExampleControls3 {
   text-align: center;
   padding: 10px;
 }
+
 /*SERVICIO DE CATERING*/
 main {
+  background-image: -webkit-gradient(linear, right top, left top, from(white), to(#b17f48));
   background-image: linear-gradient(to left, white, #b17f48);
   height: 700px;
 }
+
 main .servicio {
   text-align: center;
   padding: 8px;
   font-size: 40px;
   font-family: "Pacifico", cursive;
-  background-color: rgb(177, 127, 72);
+  background-color: #b17f48;
   color: white;
 }
+
 main .catering1 {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 700px;
 }
+
 main .textoCatering {
   font-family: "Satisfy", cursive;
   font-size: x-large;
 }
+
 main .video {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   display: inline-block;
   margin: 20px;
@@ -307,10 +407,16 @@ main .video {
 }
 
 .flex__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(white), to(#b17f48));
   background-image: linear-gradient(to right, white, #b17f48);
 }
 
@@ -319,14 +425,16 @@ main .video {
   padding: 8px;
   font-size: 40px;
   font-family: "Pacifico", cursive;
-  background-color: rgb(177, 127, 72);
+  background-color: #b17f48;
   color: white;
 }
 
 .form {
   width: 100%;
   height: 400px;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   text-align: right;
 }
 
@@ -335,10 +443,10 @@ main .video {
   margin: 7px;
   padding: 7px;
   border: none;
-  border: 5px solid rgb(177, 127, 72);
+  border: 5px solid #b17f48;
   background: transparent;
   color: white;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: medium;
 }
 
@@ -347,7 +455,7 @@ main .video {
 }
 
 .form__input:focus {
-  background-color: rgb(177, 127, 72);
+  background-color: #b17f48;
   outline: none;
 }
 
@@ -359,7 +467,9 @@ textarea {
 .imagenEmail {
   width: 400px;
   height: 400px;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding: 10px;
 }
 
@@ -371,6 +481,8 @@ textarea {
     height: 50px;
   }
   nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   nav a:hover {
@@ -387,8 +499,12 @@ textarea {
     display: inline;
   }
   .info .alifer2 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: 0px !important;
     padding: 10px;
   }
@@ -416,8 +532,13 @@ textarea {
     margin: auto;
   }
   .info .footerIzq {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .info .footerIzq .redes {
     display: inline;
@@ -435,12 +556,18 @@ textarea {
     height: 1350px;
   }
   .conteinerGaleria #galeria {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    background-image: -webkit-gradient(linear, left top, right top, from(white), to(#b17f48));
     background-image: linear-gradient(to right, white, #b17f48);
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    grid-template-areas: "budines   cookies" "brownies1 cookies1" "brownies2 cookies2" "brownies3 cookies3" "panaderia facturas" "panificados 1 facturas 1" "panificados2 facturas2" "panificados3 facturas3" ".            salado" ".            salado1" ".            salado2" ".            salado3";
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[12];
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-areas: "budines   cookies" "brownies1 cookies1" "brownies2 cookies2" "brownies3 cookies3" "panaderia facturas" "panificados 1 facturas 1" "panificados2 facturas2" "panificados3 facturas3" ".            salado" ".            salado1" ".            salado2" ".            salado3";
   }
   .conteinerGaleria #galeria img {
     justify-items: center;
@@ -450,26 +577,38 @@ textarea {
   .conteinerGaleria #galeria .title1, .conteinerGaleria #galeria .title2, .conteinerGaleria #galeria .title3, .conteinerGaleria #galeria .title4, .conteinerGaleria #galeria .title5 {
     text-align: center;
     font-size: x-large;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: budines;
   }
   .conteinerGaleria #galeria .title2 {
     text-align: center;
     font-size: x-large;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
     grid-area: cookies;
   }
   .conteinerGaleria #galeria .title3 {
     text-align: center;
     font-size: x-large;
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
     grid-area: panaderia;
   }
   .conteinerGaleria #galeria .title4 {
     text-align: center;
     font-size: x-large;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
     grid-area: facturas;
   }
   .conteinerGaleria #galeria .title5 {
     text-align: center;
     font-size: x-large;
+    -ms-grid-row: 9;
+    -ms-grid-column: 2;
     grid-area: salado;
   }
   .conteinerGaleria #galeria .brownies {
@@ -485,23 +624,35 @@ textarea {
     margin-left: 22px;
   }
   .conteinerGaleria #galeria .brownies1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: brownies1;
   }
   .conteinerGaleria #galeria .brownies2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: brownies2;
   }
   .conteinerGaleria #galeria .brownies3 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
     grid-area: brownies3;
   }
   .conteinerGaleria #galeria .cookies1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
     grid-area: cookies1;
     margin: 5px;
   }
   .conteinerGaleria #galeria .cookies2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
     grid-area: cookies2;
     margin: 5px;
   }
   .conteinerGaleria #galeria .cookies3 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
     grid-area: cookies3;
     margin: 5px;
   }
@@ -510,10 +661,14 @@ textarea {
     margin: 5px;
   }
   .conteinerGaleria #galeria .panificados2 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
     grid-area: panificados2;
     margin: 5px;
   }
   .conteinerGaleria #galeria .panificados3 {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
     grid-area: panificados3;
     margin: 5px;
   }
@@ -522,27 +677,37 @@ textarea {
     margin: 5px;
   }
   .conteinerGaleria #galeria .facturas2 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 2;
     grid-area: facturas2;
     margin: 5px;
   }
   .conteinerGaleria #galeria .facturas3 {
+    -ms-grid-row: 8;
+    -ms-grid-column: 2;
     grid-area: facturas3;
     margin: 5px;
   }
   .conteinerGaleria #galeria .salado1 {
+    -ms-grid-row: 10;
+    -ms-grid-column: 2;
     grid-area: salado1;
     margin: 5px 0px 0px 25px;
   }
   .conteinerGaleria #galeria .salado2 {
+    -ms-grid-row: 11;
+    -ms-grid-column: 2;
     grid-area: salado2;
     margin: 5px 0px 0px 25px;
   }
   .conteinerGaleria #galeria .salado3 {
+    -ms-grid-row: 12;
+    -ms-grid-column: 2;
     grid-area: salado3;
     margin: 5px 0px 0px 25px;
   }
   /*FESTIVIDADES*/
-  .torta1, .pan1, .huevo {
+  .torta1, .huevo, .pan1 {
     height: 180px;
     width: 180px;
   }
@@ -555,7 +720,9 @@ textarea {
   }
   .video {
     width: 350px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   /*FORMULARIO DE CONTACTO*/
   .formulario {
@@ -566,13 +733,18 @@ textarea {
     text-align: center;
   }
   .emailContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .imagenEmail {
     width: 80%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
-
 /*# sourceMappingURL=estilos.css.map */

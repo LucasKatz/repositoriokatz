@@ -11,12 +11,6 @@ $font3:'Satisfy', cursive;
 $color2:#00ffff;
 $color3:rgb(134, 243, 220);
 
-
-$estilos: (
-    borde:15px solid, solid
-    color:blue
-);
-
 /*MODIFICADORES UNIVERSALES */
 
 *{margin: 0%;
@@ -29,39 +23,36 @@ box-sizing: border-box;
 nav{
     font-size: larger;
 
-    &:hover {
-        color:blue;
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+        li {
+            display: inline;
+            font-size: larger;
+            margin: 4px;
         }
 
-    ul {
-    display: flex;
-    flex-direction: row;
-    }
-
-    li {
-    display: inline;
-    font-size: larger;
-    margin: 4px;
-    }
-
-    .boton {
-        width: 180px;
-        text-align: center;
-        font-size: x-large;
-        background-color:rgb(177, 127, 72);
-        color: rgb(86, 56, 31);
-        font-family: $font1;
-        font-weight: bolder;
-    }
+            .boton {
+                width: 180px;
+                text-align: center;
+                font-size: x-large;
+                background-color:rgb(177, 127, 72);
+                color: rgb(86, 56, 31);
+                font-family: $font1;
+                font-weight: bolder;
+            }
 }
 
 /*INDEX - DATOS PERSONALES */
 @mixin sizes ($height, $width){
-height: $height;
-width: $width;
+    height: $height;
+    width: $width;
 }
 
-main{
+.info{
+    height: 1100px;
 
     section{
             background-image:linear-gradient(to right,white, #b17f48);
@@ -70,7 +61,6 @@ main{
 
         .subtitulo{
             text-align: center;
-            margin-left:0px ;
             margin-bottom: 20px;
             font-family:$font2;
             background-color: rgb(177, 127, 72);
@@ -82,8 +72,6 @@ main{
             @include sizes(304px,512px );
             margin-left: 20px;
 
-            border: map-get($estilos, borde);
-            border: map-get($estilos, color);
         }
 
         .names {
@@ -130,7 +118,7 @@ main{
     .festivo {
         background-image:linear-gradient(to right,white, #b17f48);
         text-align:center;
-        height: 100% ;
+        height: 50% ;
         width: 100%;
 
         .calendar {
@@ -142,13 +130,11 @@ main{
 
 footer {
 
-
     #fondoFooter{
         display: flex;
         font-size: 20px;
         font-style: normal;
         background-color:  rgb(86, 56, 31);
-        align-items: center;
 
         .redes {
         font-size: larger;
@@ -202,12 +188,13 @@ footer {
 /*PRODUCTOS - GALERIAS */
 
         .titleBar {
-            height: 50px;
+            height: 60px;
             background-color: rgb(177, 127, 72);
 
 
             .titles{
                 padding: 8px;
+                font-size: 40px;
                 text-align: center;
                 font-family: $font2;
                 color: white;
@@ -373,6 +360,7 @@ footer {
 
     .productosFestivos {
         background-image:linear-gradient(to left,white, #b17f48);
+        height: 1800px;
 
         .serviciosPersonalizados {
             text-align: center;
@@ -414,20 +402,23 @@ footer {
     }
 
 /*SERVICIO DE CATERING*/
-article{
+main{
 
     background-image:linear-gradient(to left,white, #b17f48);
+    height: 700px;
 
         .servicio {
-            background-color: rgb(177, 127, 72);
             text-align: center;
-            font-family: $font2;
-            color: white;
             padding: 8px;
+            font-size: 40px;
+            font-family: $font2;
+            background-color: rgb(177, 127, 72);
+            color: white;
         }
 
         .catering1 {
             align-items: center;
+            height: 700px;
         }
 
         .textoCatering {
@@ -444,61 +435,66 @@ article{
 
     /*FORMULARIO DE CONTACTO*/
 
-    .flex__container {
-        display: flex;
-        text-align: center;
-        flex-wrap: wrap;
-        justify-content: center;
-        background-image:linear-gradient(to right,white, #b17f48);
+    .formulario {
+        height: 470px;
     }
 
-    .mensaje {
-        @extend .servicio;
-    }
+        .flex__container {
+            display: flex;
+            text-align: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-image:linear-gradient(to right,white, #b17f48);
+        }
 
-    .form {
-        width: 100%;
-        height: 400px;
-        flex: 1;
-        text-align: right;
-    }
+        .mensaje {
+            text-align: center;
+            padding: 8px;
+            font-size: 40px;
+            font-family: $font2;
+            background-color: rgb(177, 127, 72);
+            color: white;
+        }
 
-    .form__input {
-        width: 70%;
-        margin: 7px;
-        padding: 7px;
-        border: none;
-        border: 5px solid rgb(177, 127, 72);;
-        background: transparent;
-        color: white;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: medium;}
+        .form {
+            width: 100%;
+            height: 400px;
+            flex: 1;
+            text-align: right;
+        }
 
-    #button {
-        width: 160px;
-    }
+        .form__input {
+            width: 70%;
+            margin: 7px;
+            padding: 7px;
+            border: none;
+            border: 5px solid rgb(177, 127, 72);;
+            background: transparent;
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: medium;
+        }
 
-    .form__input:focus {
-        background-color:rgb(177, 127, 72);;
-        outline: none;
-    }
+        #button {
+            width: 160px;
+        }
 
-    textarea {
-        min-height: 100px;
-        resize: none;
-    }
+        .form__input:focus {
+            background-color:rgb(177, 127, 72);;
+            outline: none;
+        }
 
-    .imagenEmail {
-        width: 400px;
-        height: 400px;
-        flex: 1;
-        padding: 10px;
-    }
+        textarea {
+            min-height: 100px;
+            resize: none;
+        }
 
-    li img{
-        height: 180px;
-        width: 180px ;
-    }
+        .imagenEmail {
+            width: 400px;
+            height: 400px;
+            flex: 1;
+            padding: 10px;
+        }
 
 /*ADAPTACION MOBILE - MEDIA QUERIES - ADAPTACION MOBILE - MEDIA QUERIES*/
 
@@ -506,11 +502,6 @@ article{
     {
 
         /*BARRA DE NAVEGACIÓN*/
-
-    header {
-        background-image: none;
-        background-color: aqua;
-    }
 
     #logo {
         width: 50px;
@@ -526,6 +517,9 @@ article{
     }
 
 /*INDEX - DATOS PERSONALES */
+.info{ height: 1600px;
+
+
     .data {
         display: inline;
     }
@@ -534,9 +528,8 @@ article{
         height: fit-content;
         align-items: center;
         margin-left: 0px !important;
-        border: 0ch;
+        padding: 10px;
     }
-
 
     .chefs{
         margin-top: 25px;
@@ -550,7 +543,7 @@ article{
 /*INDEX - SLOGAN */
 
     .desafio1{
-        height: 550px;
+        height: 450px;
     }
 
     .slogan {
@@ -561,15 +554,15 @@ article{
 
 /*INDEX - FECHAS IMPORTANTES DE GASTRONOMIA*/
 
+
     .festivo {
-        height: 180px;
-        display: flex;
-        justify-content: center;
+        height: 30%;
     }
 
     .calendar {
-        height: fit-content;
-        width: 80%;
+        height: 60%;
+        width: 90%;
+        margin: auto;
     }
 
     /*PIE DE PÁGINA */
@@ -593,11 +586,16 @@ article{
         }
     }
 
+}
+
     /* PRODUCTOS RESPONSIVE*/
 
+.conteinerGaleria {
+    height: 1350px;
+
+
     #galeria{ display: flex;
-        background-color: aquamarine;
-        padding-bottom: 25px;
+        background-image:linear-gradient(to right,white, #b17f48);
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(12, 1fr);
@@ -614,7 +612,7 @@ article{
         ".            salado1"
         ".            salado2"
         ".            salado3";
-        height: 1300px;
+
 
         img{
             justify-items: center;
@@ -730,20 +728,20 @@ article{
 
             .salado1{
                 grid-area: salado1;
-                margin: 5px;
+                margin: 5px 0px 0px 25px;
             }
 
             .salado2{
                 grid-area: salado2;
-                margin: 5px;
+                margin:5px 0px 0px 25px;
             }
 
             .salado3{
                 grid-area: salado3;
-                margin: 5px;
+                margin: 5px 0px 0px 25px;
             }
-
         }
+    }
     /*FESTIVIDADES*/
 
     .torta1 {
@@ -761,6 +759,10 @@ article{
 
     /* SERVICIO DE CATERING*/
 
+    .productosFestivos{
+        height: 1100px;
+    }
+
     .textoCatering{
         text-align: center;
     }
@@ -772,19 +774,24 @@ article{
 
     /*FORMULARIO DE CONTACTO*/
 
-    .form{
-        text-align: center;
+    .formulario {
+        height: 830px;
     }
 
-    .emailContainer {
-        display: flex;
-    }
+        .form{
+            padding: 20px;
+            text-align: center;
+        }
 
-    .imagenEmail{
-        width: 80%;
-        height: fit-content;
-        justify-content: center;
-    }
+        .emailContainer {
+            display: flex;
+        }
+
+        .imagenEmail{
+            width: 80%;
+            height: fit-content;
+            justify-content: center;
+        }
     }
 
 
