@@ -336,7 +336,7 @@ footer .Cen .map {
 .productosFestivos {
   background-image: -webkit-gradient(linear, right top, left top, from(white), to(#b17f48));
   background-image: linear-gradient(to left, white, #b17f48);
-  height: 1800px;
+  height: 1100px;
   /*FESTIVIDADES - CAROUSELES */
 }
 
@@ -369,7 +369,6 @@ footer .Cen .map {
 main {
   background-image: -webkit-gradient(linear, right top, left top, from(white), to(#b17f48));
   background-image: linear-gradient(to left, white, #b17f48);
-  height: 700px;
 }
 
 main .servicio {
@@ -554,13 +553,13 @@ textarea {
   /* PRODUCTOS RESPONSIVE*/
   .conteinerGaleria {
     height: 1350px;
+    background-image: -webkit-gradient(linear, left top, right top, from(white), to(#b17f48));
+    background-image: linear-gradient(to right, white, #b17f48);
   }
   .conteinerGaleria #galeria {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-image: -webkit-gradient(linear, left top, right top, from(white), to(#b17f48));
-    background-image: linear-gradient(to right, white, #b17f48);
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
@@ -712,8 +711,8 @@ textarea {
     width: 180px;
   }
   /* SERVICIO DE CATERING*/
-  .productosFestivos {
-    height: 1100px;
+  .catering {
+    height: 1300px;
   }
   .textoCatering {
     text-align: center;
