@@ -11,6 +11,9 @@
 nav {
   font-size: larger;
 }
+nav .logo {
+  margin-right: 50px;
+}
 nav ul {
   display: flex;
   flex-direction: row;
@@ -28,6 +31,17 @@ nav .boton {
   color: rgb(86, 56, 31);
   font-family: "Indie Flower", cursive;
   font-weight: bolder;
+}
+nav a {
+  text-decoration: none;
+  background-image: linear-gradient(to right, yellow, brown);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 4px;
+}
+nav a:hover, nav a:focus {
+  background-size: 100% 6px;
+  transition: background-size 1s;
 }
 
 /*INDEX - DATOS PERSONALES */
@@ -52,6 +66,7 @@ nav .boton {
   height: 304px;
   width: 512px;
   margin-left: 20px;
+  transform: rotate(3deg);
 }
 .info section .names {
   display: flex;
