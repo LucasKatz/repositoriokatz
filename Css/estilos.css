@@ -265,7 +265,7 @@ footer .Cen .map {
 /*FESTIVIDADES - INFORMACIÓN GENERAL */
 .productosFestivos {
   background-image: linear-gradient(to left, white, #b17f48);
-  height: 1100px;
+  height: 1720px;
   /*FESTIVIDADES - CAROUSELES */
 }
 .productosFestivos .serviciosPersonalizados {
@@ -556,6 +556,9 @@ textarea {
     margin: 5px 0px 0px 25px;
   }
   /*FESTIVIDADES*/
+  .productosFestivos {
+    height: 1050px;
+  }
   .torta1, .pan1, .huevo {
     height: 180px;
     width: 180px;
