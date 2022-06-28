@@ -31,15 +31,13 @@ nav .boton {
   color: rgb(86, 56, 31);
   font-family: "Indie Flower", cursive;
   font-weight: bolder;
-}
-nav a {
   text-decoration: none;
   background-image: linear-gradient(to right, yellow, brown);
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 4px;
 }
-nav a:hover, nav a:focus {
+nav .boton:hover, nav a:focus {
   background-size: 100% 6px;
   transition: background-size 1s;
 }
@@ -100,7 +98,7 @@ nav a:hover, nav a:focus {
 .info .festivo {
   background-image: linear-gradient(to right, white, #b17f48);
   text-align: center;
-  height: 50%;
+  height: 41%;
   width: 100%;
 }
 .info .festivo .calendar {
@@ -422,12 +420,12 @@ textarea {
     padding: 10px;
   }
   .info .festivo {
-    height: 30%;
+    height: 25%;
   }
   .info .calendar {
-    height: 60%;
+    height: 80%;
     width: 90%;
-    margin: auto;
+    align-items: center;
   }
   .info .footerIzq {
     display: flex;

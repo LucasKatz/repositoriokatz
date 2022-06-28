@@ -41,9 +41,6 @@ nav .boton {
   color: #56381f;
   font-family: "Indie Flower", cursive;
   font-weight: bolder;
-}
-
-nav a {
   text-decoration: none;
   background-image: -webkit-gradient(linear, left top, right top, from(yellow), to(brown));
   background-image: linear-gradient(to right, yellow, brown);
@@ -52,7 +49,7 @@ nav a {
   background-size: 0% 4px;
 }
 
-nav a:hover, nav a:focus {
+nav .boton:hover, nav a:focus {
   background-size: 100% 6px;
   -webkit-transition: background-size 1s;
   transition: background-size 1s;
@@ -131,7 +128,7 @@ nav a:hover, nav a:focus {
   background-image: -webkit-gradient(linear, left top, right top, from(white), to(#b17f48));
   background-image: linear-gradient(to right, white, #b17f48);
   text-align: center;
-  height: 50%;
+  height: 41%;
   width: 100%;
 }
 
@@ -544,12 +541,14 @@ textarea {
     padding: 10px;
   }
   .info .festivo {
-    height: 30%;
+    height: 25%;
   }
   .info .calendar {
-    height: 60%;
+    height: 80%;
     width: 90%;
-    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .info .footerIzq {
     display: -webkit-box;
