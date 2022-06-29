@@ -99,7 +99,6 @@ nav .boton:hover, nav a:focus {
   background-image: linear-gradient(to right, white, #b17f48);
   text-align: center;
   height: 41%;
-  width: 100%;
 }
 .info .festivo .calendar {
   margin: 20px;
@@ -107,7 +106,6 @@ nav .boton:hover, nav a:focus {
 
 /*PIE DE PÁGINA */
 footer #fondoFooter {
-  display: flex;
   font-size: 20px;
   font-style: normal;
   background-color: rgb(86, 56, 31);
@@ -143,120 +141,119 @@ footer .Cen .map {
 }
 
 /*PRODUCTOS - GALERIAS */
-.titleBar {
+main .titleBar {
   height: 60px;
   background-color: rgb(177, 127, 72);
 }
-.titleBar .titles {
+main .titleBar .titles {
   padding: 8px;
   font-size: 40px;
   text-align: center;
   font-family: "Pacifico", cursive;
   color: white;
 }
-
-#galeria {
+main #galeria {
   display: flex;
   padding-bottom: 25px;
   height: 650px;
 }
-#galeria .title1, #galeria .title5, #galeria .title4, #galeria .title3, #galeria .title2 {
+main #galeria .title1, main #galeria .title5, main #galeria .title4, main #galeria .title3, main #galeria .title2 {
   text-align: center;
   font-size: xx-large;
   font-family: "Indie Flower", cursive;
 }
-#galeria img {
+main #galeria img {
   width: 180px;
   height: 180px;
 }
-#galeria .brownies1 {
+main #galeria .brownies1 {
   margin: 5px;
 }
-#galeria .brownies1:hover {
+main #galeria .brownies1:hover {
   transform: scale(1.2);
 }
-#galeria .brownies2 {
+main #galeria .brownies2 {
   margin: 5px;
 }
-#galeria .brownies2:hover {
+main #galeria .brownies2:hover {
   transform: scale(1.2);
 }
-#galeria .brownies3 {
+main #galeria .brownies3 {
   margin: 5px;
 }
-#galeria .brownies3:hover {
+main #galeria .brownies3:hover {
   transform: scale(1.2);
 }
-#galeria .cookies1 {
+main #galeria .cookies1 {
   margin: 5px;
 }
-#galeria .cookies1:hover {
+main #galeria .cookies1:hover {
   transform: scale(1.2);
 }
-#galeria .cookies2 {
+main #galeria .cookies2 {
   margin: 5px;
 }
-#galeria .cookies2:hover {
+main #galeria .cookies2:hover {
   transform: scale(1.2);
 }
-#galeria .cookies3 {
+main #galeria .cookies3 {
   margin: 5px;
 }
-#galeria .cookies3:hover {
+main #galeria .cookies3:hover {
   transform: scale(1.2);
 }
-#galeria .panificados1 {
+main #galeria .panificados1 {
   margin: 5px;
 }
-#galeria .panificados1:hover {
+main #galeria .panificados1:hover {
   transform: scale(1.2);
 }
-#galeria .panificados2 {
+main #galeria .panificados2 {
   margin: 5px;
 }
-#galeria .panificados2:hover {
+main #galeria .panificados2:hover {
   transform: scale(1.2);
 }
-#galeria .panificados3 {
+main #galeria .panificados3 {
   margin: 5px;
 }
-#galeria .panificados3:hover {
+main #galeria .panificados3:hover {
   transform: scale(1.2);
 }
-#galeria .facturas1 {
+main #galeria .facturas1 {
   margin: 5px;
 }
-#galeria .facturas1:hover {
+main #galeria .facturas1:hover {
   transform: scale(1.2);
 }
-#galeria .facturas2 {
+main #galeria .facturas2 {
   margin: 5px;
 }
-#galeria .facturas2:hover {
+main #galeria .facturas2:hover {
   transform: scale(1.2);
 }
-#galeria .facturas3 {
+main #galeria .facturas3 {
   margin: 5px;
 }
-#galeria .facturas3:hover {
+main #galeria .facturas3:hover {
   transform: scale(1.2);
 }
-#galeria .salado1 {
+main #galeria .salado1 {
   margin: 5px;
 }
-#galeria .salado1:hover {
+main #galeria .salado1:hover {
   transform: scale(1.2);
 }
-#galeria .salado2 {
+main #galeria .salado2 {
   margin: 5px;
 }
-#galeria .salado2:hover {
+main #galeria .salado2:hover {
   transform: scale(1.2);
 }
-#galeria .salado3 {
+main #galeria .salado3 {
   margin: 5px;
 }
-#galeria .salado3:hover {
+main #galeria .salado3:hover {
   transform: scale(1.2);
 }
 
@@ -291,6 +288,10 @@ footer .Cen .map {
 main {
   background-image: linear-gradient(to left, white, #b17f48);
 }
+main .catering1 {
+  align-items: center;
+  height: 700px;
+}
 main .servicio {
   text-align: center;
   padding: 8px;
@@ -298,10 +299,6 @@ main .servicio {
   font-family: "Pacifico", cursive;
   background-color: rgb(177, 127, 72);
   color: white;
-}
-main .catering1 {
-  align-items: center;
-  height: 700px;
 }
 main .textoCatering {
   font-family: "Satisfy", cursive;
@@ -317,16 +314,15 @@ main .video {
 .formulario {
   height: 470px;
 }
-
-.flex__container {
+.formulario .flex__container {
   display: flex;
   text-align: center;
   flex-wrap: wrap;
   justify-content: center;
   background-image: linear-gradient(to right, white, #b17f48);
+  padding: 15px;
 }
-
-.mensaje {
+.formulario .mensaje {
   text-align: center;
   padding: 8px;
   font-size: 40px;
@@ -334,41 +330,33 @@ main .video {
   background-color: rgb(177, 127, 72);
   color: white;
 }
-
-.form {
+.formulario .form {
   width: 100%;
   height: 400px;
   flex: 1;
   text-align: right;
 }
-
-.form__input {
+.formulario .form__input {
   width: 70%;
   margin: 7px;
   padding: 7px;
-  border: none;
   border: 5px solid rgb(177, 127, 72);
   background: transparent;
-  color: white;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: medium;
 }
-
-#button {
+.formulario #button {
   width: 160px;
 }
-
-.form__input:focus {
+.formulario .form__input:focus {
   background-color: rgb(177, 127, 72);
   outline: none;
 }
-
-textarea {
+.formulario textarea {
   min-height: 100px;
   resize: none;
 }
-
-.imagenEmail {
+.formulario .imagenEmail {
   width: 400px;
   height: 400px;
   flex: 1;
@@ -381,12 +369,6 @@ textarea {
   #logo {
     width: 50px;
     height: 50px;
-  }
-  nav {
-    display: flex;
-  }
-  nav a:hover {
-    color: white;
   }
   /*INDEX - DATOS PERSONALES */
   .info {
@@ -449,7 +431,7 @@ textarea {
     height: 120px;
     width: 120px;
   }
-  .conteinerGaleria #galeria .title1, .conteinerGaleria #galeria .title2, .conteinerGaleria #galeria .title3, .conteinerGaleria #galeria .title4, .conteinerGaleria #galeria .title5 {
+  .conteinerGaleria #galeria .title1, .conteinerGaleria main #galeria .title2, main .conteinerGaleria #galeria .title2, .conteinerGaleria main #galeria .title3, main .conteinerGaleria #galeria .title3, .conteinerGaleria main #galeria .title4, main .conteinerGaleria #galeria .title4, .conteinerGaleria main #galeria .title5, main .conteinerGaleria #galeria .title5 {
     text-align: center;
     font-size: x-large;
     grid-area: budines;
@@ -564,11 +546,10 @@ textarea {
   }
   /*FORMULARIO DE CONTACTO*/
   .formulario {
-    height: 823px;
+    height: 950px;
   }
   .form {
     padding: 20px;
-    text-align: center;
   }
   .emailContainer {
     display: flex;

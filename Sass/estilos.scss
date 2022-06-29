@@ -6,11 +6,6 @@ $font1:'Indie Flower', cursive;
 $font2:'Pacifico', cursive;
 $font3:'Satisfy', cursive;
 
-
-
-$color2:#00ffff;
-$color3:rgb(134, 243, 220);
-
 /*MODIFICADORES UNIVERSALES */
 
 *{margin: 0%;
@@ -109,10 +104,10 @@ nav{
     }
     /*INDEX - SLOGAN */
 
-        article {
-            text-align: center;
-            background-image:linear-gradient(to left,white, #b17f48);
-            height: 250px;
+    article {
+        text-align: center;
+        background-image:linear-gradient(to left,white, #b17f48);
+        height: 250px;
 
 
         .slogan {
@@ -135,7 +130,6 @@ nav{
         background-image:linear-gradient(to right,white, #b17f48);
         text-align:center;
         height: 41% ;
-        width: 100%;
 
         .calendar {
             margin: 20px;
@@ -147,7 +141,6 @@ nav{
 footer {
 
     #fondoFooter{
-        display: flex;
         font-size: 20px;
         font-style: normal;
         background-color:  rgb(86, 56, 31);
@@ -202,6 +195,7 @@ footer {
     }
 
 /*PRODUCTOS - GALERIAS */
+    main {
 
         .titleBar {
             height: 60px;
@@ -370,7 +364,7 @@ footer {
                 transform: scale(1.2);
             }
         }
-
+    }
 
     /*FESTIVIDADES - INFORMACIÓN GENERAL */
 
@@ -419,40 +413,39 @@ footer {
 
 /*SERVICIO DE CATERING*/
 main{
-
     background-image:linear-gradient(to left,white, #b17f48);
-
-        .servicio {
-            text-align: center;
-            padding: 8px;
-            font-size: 40px;
-            font-family: $font2;
-            background-color: rgb(177, 127, 72);
-            color: white;
-        }
 
         .catering1 {
             align-items: center;
             height: 700px;
         }
 
-        .textoCatering {
-            font-family: $font3;
-            font-size: x-large;
-        }
+            .servicio {
+                text-align: center;
+                padding: 8px;
+                font-size: 40px;
+                font-family: $font2;
+                background-color: rgb(177, 127, 72);
+                color: white;
+            }
 
-        .video {
-            display: flex;
-            display: inline-block;
-            margin: 20px;
-        }
+
+            .textoCatering {
+                font-family: $font3;
+                font-size: x-large;
+            }
+
+            .video {
+                display: flex;
+                display: inline-block;
+                margin: 20px;
+            }
 }
 
     /*FORMULARIO DE CONTACTO*/
 
     .formulario {
         height: 470px;
-    }
 
         .flex__container {
             display: flex;
@@ -460,6 +453,7 @@ main{
             flex-wrap: wrap;
             justify-content: center;
             background-image:linear-gradient(to right,white, #b17f48);
+            padding: 15px;
         }
 
         .mensaje {
@@ -482,10 +476,8 @@ main{
             width: 70%;
             margin: 7px;
             padding: 7px;
-            border: none;
             border: 5px solid rgb(177, 127, 72);;
             background: transparent;
-            color: white;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: medium;
         }
@@ -510,7 +502,7 @@ main{
             flex: 1;
             padding: 10px;
         }
-
+    }
 /*ADAPTACION MOBILE - MEDIA QUERIES - ADAPTACION MOBILE - MEDIA QUERIES*/
 
     @media screen and (max-width: 380px)
@@ -523,13 +515,6 @@ main{
         height: 50px;
     }
 
-    nav {
-        display: flex;
-    }
-
-    nav a:hover {
-        color:white;
-    }
 
 /*INDEX - DATOS PERSONALES */
 .info{ height: 1495px;
@@ -629,139 +614,139 @@ main{
             grid-area:budines;
             }
 
-            .title2{
-                text-align: center;
-                font-size:x-large;
-                grid-area:cookies;
-            }
+        .title2{
+            text-align: center;
+            font-size:x-large;
+            grid-area:cookies;
+        }
 
-            .title3{
-                text-align: center;
-                font-size:x-large;
-                grid-area:panaderia;
-            }
+        .title3{
+            text-align: center;
+            font-size:x-large;
+            grid-area:panaderia;
+        }
 
-            .title4{
-                text-align: center;
-                font-size:x-large;
-                grid-area:facturas;
-            }
+        .title4{
+            text-align: center;
+            font-size:x-large;
+            grid-area:facturas;
+        }
 
-            .title5{
-                text-align: center;
-                font-size:x-large;
-                grid-area:salado;
-            }
+        .title5{
+            text-align: center;
+            font-size:x-large;
+            grid-area:salado;
+        }
 
-            .brownies{
-                margin-left: 22px;
-            }
+        .brownies{
+            margin-left: 22px;
+        }
 
-            .cookies{
-                margin-left: 22px;
-            }
+        .cookies{
+            margin-left: 22px;
+        }
 
-            .panes{
-                margin-left: 22px;
-            }
+        .panes{
+            margin-left: 22px;
+        }
 
-            .facturas{
-                margin-left: 22px;
-            }
+        .facturas{
+            margin-left: 22px;
+        }
 
 
-            .brownies1{
+        .brownies1{
             grid-area: brownies1;
-            }
+        }
 
 
-            .brownies2 {
-                grid-area: brownies2;
-            }
+        .brownies2 {
+            grid-area: brownies2;
+        }
 
 
-            .brownies3{
-                grid-area: brownies3;
-            }
+        .brownies3{
+            grid-area: brownies3;
+        }
 
-            .cookies1{
-                grid-area: cookies1;
-                margin: 5px;
-            }
+        .cookies1{
+            grid-area: cookies1;
+            margin: 5px;
+        }
 
-            .cookies2 {
-                grid-area: cookies2;
-                margin: 5px;
-            }
+        .cookies2 {
+            grid-area: cookies2;
+            margin: 5px;
+        }
 
-            .cookies3{
-                grid-area: cookies3;
-                margin: 5px;
-            }
+        .cookies3{
+            grid-area: cookies3;
+            margin: 5px;
+        }
 
-            .panificados1{
-                grid-area: panificados1;
-                margin: 5px;
-            }
+        .panificados1{
+            grid-area: panificados1;
+            margin: 5px;
+        }
 
-            .panificados2{
-                grid-area: panificados2;
-                margin: 5px;
-            }
+        .panificados2{
+            grid-area: panificados2;
+            margin: 5px;
+        }
 
-            .panificados3{
-                grid-area: panificados3;
-                margin: 5px;
-            }
+        .panificados3{
+            grid-area: panificados3;
+            margin: 5px;
+        }
 
-            .facturas1{
-                grid-area: facturas1;
-                margin: 5px;
-            }
+        .facturas1{
+            grid-area: facturas1;
+            margin: 5px;
+        }
 
-            .facturas2{
-                grid-area: facturas2;
-                margin: 5px;
-            }
+        .facturas2{
+            grid-area: facturas2;
+            margin: 5px;
+        }
 
-            .facturas3{
-                grid-area: facturas3;
-                margin: 5px;
-            }
+        .facturas3{
+            grid-area: facturas3;
+            margin: 5px;
+        }
 
-            .salado1{
-                grid-area: salado1;
-                margin: 5px 0px 0px 25px;
-            }
+        .salado1{
+            grid-area: salado1;
+            margin: 5px 0px 0px 25px;
+        }
 
-            .salado2{
-                grid-area: salado2;
-                margin:5px 0px 0px 25px;
-            }
+        .salado2{
+            grid-area: salado2;
+            margin:5px 0px 0px 25px;
+        }
 
-            .salado3{
-                grid-area: salado3;
-                margin: 5px 0px 0px 25px;
-            }
+        .salado3{
+            grid-area: salado3;
+            margin: 5px 0px 0px 25px;
         }
     }
+}
     /*FESTIVIDADES*/
     .productosFestivos {
         height: 1050px;
     }
 
-    .torta1 {
-    height: 180px;
-    width: 180px;
-    }
+        .torta1 {
+            height: 180px;
+            width: 180px;
+        }
 
-    .huevo {
-        @extend .torta1;
-    }
+        .huevo {
+            @extend .torta1;
+        }
 
-    .pan1{
-        @extend .torta1;
-    }
+        .pan1{
+            @extend .torta1;
+        }
 
     /* SERVICIO DE CATERING*/
 
@@ -769,24 +754,23 @@ main{
         height: 1300px;
     }
 
-    .textoCatering{
-        text-align: center;
-    }
+        .textoCatering{
+            text-align: center;
+        }
 
-    .video {
-        width: 350px;
-        align-items:center
-    }
+        .video {
+            width: 350px;
+            align-items:center
+        }
 
     /*FORMULARIO DE CONTACTO*/
 
     .formulario {
-        height: 823px;
+        height: 950px;
     }
 
         .form{
             padding: 20px;
-            text-align: center;
         }
 
         .emailContainer {
