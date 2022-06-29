@@ -74,7 +74,6 @@ nav{
             background-image:linear-gradient(to right,white, #b17f48);
             padding-bottom: 15px;
 
-
         .subtitulo{
             text-align: center;
             margin-bottom: 20px;
@@ -533,7 +532,7 @@ main{
     }
 
 /*INDEX - DATOS PERSONALES */
-.info{ height: 1600px;
+.info{ height: 1495px;
 
 
     .data {
@@ -542,7 +541,6 @@ main{
 
     .alifer2 {
         height: fit-content;
-        align-items: center;
         margin-left: 0px !important;
         padding: 10px;
     }
@@ -563,7 +561,6 @@ main{
     }
 
     .slogan {
-        margin-top: -25px;
         font-size: 17pt;
         padding: 10px;
     }
@@ -572,25 +569,15 @@ main{
 
 
     .festivo {
-        height: 25%;
+        height: fit-content;
     }
 
     .calendar {
-        height: 80%;
         width: 90%;
         align-items: center;
     }
 
     /*PIE DE PÁGINA */
-
-    .footerIzq {
-        display: flex;
-        flex-direction: column;
-
-        .redes {
-                display: inline;
-        }
-    }
 
     .Cen {
         justify-items: center;
@@ -794,7 +781,7 @@ main{
     /*FORMULARIO DE CONTACTO*/
 
     .formulario {
-        height: 830px;
+        height: 823px;
     }
 
         .form{

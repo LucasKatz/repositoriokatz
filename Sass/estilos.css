@@ -507,7 +507,7 @@ textarea {
   }
   /*INDEX - DATOS PERSONALES */
   .info {
-    height: 1600px;
+    height: 1495px;
     /*INDEX - SLOGAN */
     /*INDEX - FECHAS IMPORTANTES DE GASTRONOMIA*/
     /*PIE DE PÁGINA */
@@ -519,9 +519,6 @@ textarea {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin-left: 0px !important;
     padding: 10px;
   }
@@ -536,31 +533,19 @@ textarea {
     height: 450px;
   }
   .info .slogan {
-    margin-top: -25px;
     font-size: 17pt;
     padding: 10px;
   }
   .info .festivo {
-    height: 25%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .info .calendar {
-    height: 80%;
     width: 90%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .info .footerIzq {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .info .footerIzq .redes {
-    display: inline;
   }
   .info .Cen {
     justify-items: center;
@@ -748,7 +733,7 @@ textarea {
   }
   /*FORMULARIO DE CONTACTO*/
   .formulario {
-    height: 830px;
+    height: 823px;
   }
   .form {
     padding: 20px;
