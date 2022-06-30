@@ -86,6 +86,8 @@ nav{
             @include sizes(304px,512px );
             margin-left: 20px;
             transform: rotate(3deg);
+            padding: 15px;
+            object-fit: cover;
 
         }
 
@@ -501,8 +503,8 @@ main{
         }
 
         .imagenEmail {
-            width: 400px;
-            height: 400px;
+            width: 370px;
+            height: 370px;
             flex: 1;
             padding: 10px;
         }
@@ -522,27 +524,30 @@ main{
 
 /*INDEX - DATOS PERSONALES */
 .info{
-    height: 1495px;
-    width: 380px;
+    height: 1385px;
+    width: 378px;
 
-    .subtitulo{
-        width: 380px;
-    }
+    .perfil{
+        width: 378px;
 
-    .alifer2 {
-        height: 70%;
-        width: 70%;
-        margin-left: 0px !important;
-        padding: 10px;
-    }
+        .subtitulo{
+            width: 378px;
+        }
 
-    .chefs{
-        margin-top: 25px;
-        text-align: center;
-    }
+        .alifer2{
+            width: 100%;
+            height: 100%;
+        }
 
-    .names {
-        margin-top: 20px;
+        .chefs{
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        .names {
+            margin-top: 20px;
+        }
+
     }
 
 /*INDEX - SLOGAN */
@@ -772,7 +777,7 @@ main{
     /*FORMULARIO DE CONTACTO*/
 
     .formulario {
-        height: 950px;
+        height: 920px;
     }
 
         .form{
@@ -788,7 +793,7 @@ main{
         }
 
         .imagenEmail{
-            width: 80%;
+            width: 360px;
             height: fit-content;
             justify-content: center;
         }
