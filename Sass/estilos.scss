@@ -6,6 +6,10 @@ $font1:'Indie Flower', cursive;
 $font2:'Pacifico', cursive;
 $font3:'Satisfy', cursive;
 
+$color1:white;
+$color2:rgb(177, 127, 72);
+$color3:rgb(86, 56, 31);
+
 /*MODIFICADORES UNIVERSALES */
 
 *{margin: 0%;
@@ -37,8 +41,8 @@ nav{
                 width: 180px;
                 text-align: center;
                 font-size: x-large;
-                background-color:rgb(177, 127, 72);
-                color: rgb(86, 56, 31);
+                background-color:$color2;
+                color: $color3;
                 font-family: $font1;
                 font-weight: bolder;
                 text-decoration: none;
@@ -73,9 +77,9 @@ nav{
             text-align: center;
             margin-bottom: 20px;
             font-family:$font2;
-            background-color: rgb(177, 127, 72);
+            background-color: $color2;
             padding: 8px;
-            color: white;
+            color: $color1;
         }
 
         .alifer2 {
@@ -113,9 +117,9 @@ nav{
         .slogan {
             font-family: $font2;
             text-align: center;
-            background-color: rgb(177, 127, 72);
+            background-color: $color2;
             padding: 8px;
-            color: white;
+            color:$color1;
         }
 
         .nos {
@@ -143,7 +147,7 @@ footer {
     #fondoFooter{
         font-size: 20px;
         font-style: normal;
-        background-color:  rgb(86, 56, 31);
+        background-color:  $color3;
 
         .redes {
         font-size: larger;
@@ -199,7 +203,7 @@ footer {
 
         .titleBar {
             height: 60px;
-            background-color: rgb(177, 127, 72);
+            background-color: $color2;
 
 
             .titles{
@@ -207,7 +211,7 @@ footer {
                 font-size: 40px;
                 text-align: center;
                 font-family: $font2;
-                color: white;
+                color:$color1;
             }
 
         }
@@ -377,8 +381,8 @@ footer {
             padding: 8px;
             font-size: 40px;
             font-family: $font2;
-            background-color: rgb(177, 127, 72);
-            color: white;
+            background-color: $color2;
+            color: $color1;
         }
 
         h2{
@@ -425,8 +429,8 @@ main{
                 padding: 8px;
                 font-size: 40px;
                 font-family: $font2;
-                background-color: rgb(177, 127, 72);
-                color: white;
+                background-color: $color2;
+                color: $color1;
             }
 
 
@@ -445,7 +449,7 @@ main{
     /*FORMULARIO DE CONTACTO*/
 
     .formulario {
-        height: 470px;
+        height: 500px;
 
         .flex__container {
             display: flex;
@@ -461,22 +465,21 @@ main{
             padding: 8px;
             font-size: 40px;
             font-family: $font2;
-            background-color: rgb(177, 127, 72);
-            color: white;
+            background-color:$color2;
+            color: $color1;
         }
 
         .form {
             width: 100%;
             height: 400px;
             flex: 1;
-            text-align: right;
         }
 
         .form__input {
             width: 70%;
             margin: 7px;
             padding: 7px;
-            border: 5px solid rgb(177, 127, 72);;
+            border: 5px solid $color2;
             background: transparent;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: medium;
@@ -484,10 +487,11 @@ main{
 
         #button {
             width: 160px;
+            justify-items: center;
         }
 
         .form__input:focus {
-            background-color:rgb(177, 127, 72);;
+            background-color:$color2;
             outline: none;
         }
 
@@ -517,15 +521,17 @@ main{
 
 
 /*INDEX - DATOS PERSONALES */
-.info{ height: 1495px;
+.info{
+    height: 1495px;
+    width: 380px;
 
-
-    .data {
-        display: inline;
+    .subtitulo{
+        width: 380px;
     }
 
     .alifer2 {
-        height: fit-content;
+        height: 70%;
+        width: 70%;
         margin-left: 0px !important;
         padding: 10px;
     }
@@ -771,6 +777,10 @@ main{
 
         .form{
             padding: 20px;
+        }
+
+        .form__section{
+            text-align: center;
         }
 
         .emailContainer {

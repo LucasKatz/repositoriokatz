@@ -416,7 +416,7 @@ main .video {
 
 /*FORMULARIO DE CONTACTO*/
 .formulario {
-  height: 470px;
+  height: 500px;
 }
 
 .formulario .flex__container {
@@ -449,7 +449,6 @@ main .video {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  text-align: right;
 }
 
 .formulario .form__input {
@@ -464,6 +463,7 @@ main .video {
 
 .formulario #button {
   width: 160px;
+  justify-items: center;
 }
 
 .formulario .form__input:focus {
@@ -495,17 +495,17 @@ main .video {
   /*INDEX - DATOS PERSONALES */
   .info {
     height: 1495px;
+    width: 380px;
     /*INDEX - SLOGAN */
     /*INDEX - FECHAS IMPORTANTES DE GASTRONOMIA*/
     /*PIE DE PÁGINA */
   }
-  .info .data {
-    display: inline;
+  .info .subtitulo {
+    width: 380px;
   }
   .info .alifer2 {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 70%;
+    width: 70%;
     margin-left: 0px !important;
     padding: 10px;
   }
@@ -724,6 +724,9 @@ main .video {
   }
   .form {
     padding: 20px;
+  }
+  .form__section {
+    text-align: center;
   }
   .emailContainer {
     display: -webkit-box;
