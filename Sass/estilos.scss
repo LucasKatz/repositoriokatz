@@ -18,47 +18,7 @@ box-sizing: border-box;
 
 
 /*BARRA DE NAVEGACIÓN*/
-
-nav{
-    font-size: larger;
-
-    .logo{
-        margin-right: 50px;
-    }
-
-    ul {
-        display: flex;
-        flex-direction: row;
-    }
-
-        li {
-            display: inline;
-            font-size: larger;
-            margin: 4px;
-        }
-
-            .boton{
-                width: 180px;
-                text-align: center;
-                font-size: x-large;
-                background-color:$color2;
-                color: $color3;
-                font-family: $font1;
-                font-weight: bolder;
-                text-decoration: none;
-                background-image: linear-gradient(to right, yellow,brown);
-                background-position: 0% 100%;
-                background-repeat: no-repeat;
-                background-size: 0% 4px;
-
-            }
-            .boton:hover, a:focus {
-                background-size: 100% 6px;
-                transition: background-size 1s;
-            }
-
-}
-
+@import "_header";
 
 /*INDEX - DATOS PERSONALES */
 @mixin sizes ($height, $width){
@@ -92,7 +52,6 @@ nav{
         }
 
         .names {
-
             display: flex;
             justify-content: center;
             font-size:xx-large;
@@ -106,7 +65,6 @@ nav{
             padding: 2%;
             text-align: justify;
         }
-
     }
     /*INDEX - SLOGAN */
 
@@ -142,63 +100,8 @@ nav{
         }
     }
 }
-/*PIE DE PÁGINA */
 
-footer {
-
-    #fondoFooter{
-        font-size: 20px;
-        font-style: normal;
-        background-color:  $color3;
-
-        .redes {
-        font-size: larger;
-        font-family: $font2;
-        }
-
-        .Instagram {
-            list-style: none;
-            font-family: $font2;
-        }
-
-        .Facebook {
-            list-style: none;
-            margin: 20px 0px 20px 0px;
-            font-family: $font2;
-        }
-
-        .fa-facebook{
-            margin-right: 5px;
-        }
-
-        .fa-instagram {
-            @extend .fa-facebook
-        }
-
-        .fa-whatsapp {
-            @extend.fa-facebook
-        }
-
-        .n1{
-            list-style:none;
-            font-family: $font2;
-        }
-
-        .n2{
-            list-style:none;
-            font-family: $font2;
-        }
-    }
-
-    .Cen {
-
-            .map {
-                margin-top: 20px;
-                width: 300px;
-                height: 300px;
-            }
-        }
-    }
+@import "_footer";
 
 /*PRODUCTOS - GALERIAS */
     main {
@@ -249,6 +152,7 @@ footer {
                 width: 180px;
                 height: 180px;
             }
+
 
             .brownies1{
                 margin: 5px;
