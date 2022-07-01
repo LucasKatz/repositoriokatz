@@ -4,41 +4,54 @@
 /*MODIFICADORES UNIVERSALES */
 * {
   margin: 0%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /*BARRA DE NAVEGACIÓN*/
 nav {
   font-size: larger;
 }
+
 nav .logo {
   margin-right: 50px;
 }
+
 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
+
 nav li {
   display: inline;
   font-size: larger;
   margin: 4px;
 }
+
 nav .boton {
   width: 180px;
   text-align: center;
   font-size: x-large;
-  background-color: rgb(177, 127, 72);
-  color: rgb(86, 56, 31);
+  background-color: #b17f48;
+  color: #56381f;
   font-family: "Indie Flower", cursive;
   font-weight: bolder;
   text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(yellow), to(brown));
   background-image: linear-gradient(to right, yellow, brown);
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 4px;
 }
+
 nav .boton:hover, nav a:focus {
   background-size: 100% 6px;
+  -webkit-transition: background-size 1s;
   transition: background-size 1s;
 }
 
@@ -48,32 +61,44 @@ nav .boton:hover, nav a:focus {
   /*INDEX - SLOGAN */
   /*INDEX - FECHAS IMPORTANTES DE GASTRONOMIA*/
 }
+
 .info section {
+  background-image: -webkit-gradient(linear, left top, right top, from(white), to(#b17f48));
   background-image: linear-gradient(to right, white, #b17f48);
   padding-bottom: 15px;
 }
+
 .info section .subtitulo {
   text-align: center;
   margin-bottom: 20px;
   font-family: "Pacifico", cursive;
-  background-color: rgb(177, 127, 72);
+  background-color: #b17f48;
   padding: 8px;
   color: white;
 }
+
 .info section .alifer2 {
   height: 304px;
   width: 512px;
   margin-left: 20px;
-  transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
   padding: 15px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .info section .names {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: xx-large;
   font-family: "Indie Flower", cursive;
 }
+
 .info section .chefs {
   margin-top: 40px;
   font-family: "Satisfy", cursive;
@@ -81,27 +106,34 @@ nav .boton:hover, nav a:focus {
   padding: 2%;
   text-align: justify;
 }
+
 .info article {
   text-align: center;
+  background-image: -webkit-gradient(linear, right top, left top, from(white), to(#b17f48));
   background-image: linear-gradient(to left, white, #b17f48);
   height: 250px;
 }
+
 .info article .slogan {
   font-family: "Pacifico", cursive;
   text-align: center;
-  background-color: rgb(177, 127, 72);
+  background-color: #b17f48;
   padding: 8px;
   color: white;
 }
+
 .info article .nos {
   font-family: "Satisfy", cursive;
   font-size: x-large;
 }
+
 .info .festivo {
+  background-image: -webkit-gradient(linear, left top, right top, from(white), to(#b17f48));
   background-image: linear-gradient(to right, white, #b17f48);
   text-align: center;
   height: 41%;
 }
+
 .info .festivo .calendar {
   margin: 20px;
 }
@@ -110,32 +142,39 @@ nav .boton:hover, nav a:focus {
 footer #fondoFooter {
   font-size: 20px;
   font-style: normal;
-  background-color: rgb(86, 56, 31);
+  background-color: #56381f;
 }
+
 footer #fondoFooter .redes {
   font-size: larger;
   font-family: "Pacifico", cursive;
 }
+
 footer #fondoFooter .Instagram {
   list-style: none;
   font-family: "Pacifico", cursive;
 }
+
 footer #fondoFooter .Facebook {
   list-style: none;
   margin: 20px 0px 20px 0px;
   font-family: "Pacifico", cursive;
 }
-footer #fondoFooter .fa-facebook, footer #fondoFooter .fa-whatsapp, footer #fondoFooter .fa-instagram {
+
+footer #fondoFooter .fa-facebook, footer #fondoFooter .fa-instagram, footer #fondoFooter .fa-whatsapp {
   margin-right: 5px;
 }
+
 footer #fondoFooter .n1 {
   list-style: none;
   font-family: "Pacifico", cursive;
 }
+
 footer #fondoFooter .n2 {
   list-style: none;
   font-family: "Pacifico", cursive;
 }
+
 footer .Cen .map {
   margin-top: 20px;
   width: 300px;
@@ -145,8 +184,9 @@ footer .Cen .map {
 /*PRODUCTOS - GALERIAS */
 main .titleBar {
   height: 60px;
-  background-color: rgb(177, 127, 72);
+  background-color: #b17f48;
 }
+
 main .titleBar .titles {
   padding: 8px;
   font-size: 40px;
@@ -154,159 +194,232 @@ main .titleBar .titles {
   font-family: "Pacifico", cursive;
   color: white;
 }
+
 main #galeria {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-bottom: 25px;
   height: 650px;
 }
-main #galeria .title1, main #galeria .title5, main #galeria .title4, main #galeria .title3, main #galeria .title2 {
+
+main #galeria .title1, main #galeria .title2, main #galeria .title3, main #galeria .title4, main #galeria .title5 {
   text-align: center;
   font-size: xx-large;
   font-family: "Indie Flower", cursive;
 }
+
 main #galeria img {
   width: 180px;
   height: 180px;
 }
+
 main #galeria .brownies1 {
   margin: 5px;
 }
+
 main #galeria .brownies1:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 main #galeria .brownies2 {
   margin: 5px;
 }
+
 main #galeria .brownies2:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 main #galeria .brownies3 {
   margin: 5px;
 }
+
 main #galeria .brownies3:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 main #galeria .cookies1 {
   margin: 5px;
 }
+
 main #galeria .cookies1:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 main #galeria .cookies2 {
   margin: 5px;
 }
+
 main #galeria .cookies2:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 main #galeria .cookies3 {
   margin: 5px;
 }
+
 main #galeria .cookies3:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 main #galeria .panificados1 {
   margin: 5px;
 }
+
 main #galeria .panificados1:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 main #galeria .panificados2 {
   margin: 5px;
 }
+
 main #galeria .panificados2:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 main #galeria .panificados3 {
   margin: 5px;
 }
+
 main #galeria .panificados3:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 main #galeria .facturas1 {
   margin: 5px;
 }
+
 main #galeria .facturas1:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 main #galeria .facturas2 {
   margin: 5px;
 }
+
 main #galeria .facturas2:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 main #galeria .facturas3 {
   margin: 5px;
 }
+
 main #galeria .facturas3:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 main #galeria .salado1 {
   margin: 5px;
 }
+
 main #galeria .salado1:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 main #galeria .salado2 {
   margin: 5px;
 }
+
 main #galeria .salado2:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
+
 main #galeria .salado3 {
   margin: 5px;
 }
+
 main #galeria .salado3:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 /*FESTIVIDADES - INFORMACIÓN GENERAL */
 .productosFestivos {
+  background-image: -webkit-gradient(linear, right top, left top, from(white), to(#b17f48));
   background-image: linear-gradient(to left, white, #b17f48);
   height: 1720px;
   /*FESTIVIDADES - CAROUSELES */
 }
+
 .productosFestivos .serviciosPersonalizados {
   text-align: center;
   padding: 8px;
   font-size: 40px;
   font-family: "Pacifico", cursive;
-  background-color: rgb(177, 127, 72);
+  background-color: #b17f48;
   color: white;
 }
+
 .productosFestivos h2 {
   font-family: "Satisfy", cursive;
   font-weight: bolder;
 }
+
 .productosFestivos .volanta {
   text-align: center;
   font-family: "Satisfy", cursive;
   font-size: x-large;
 }
-.productosFestivos #carouselExampleControls, .productosFestivos #carouselExampleControls3, .productosFestivos #carouselExampleControls2 {
+
+.productosFestivos #carouselExampleControls, .productosFestivos #carouselExampleControls2, .productosFestivos #carouselExampleControls3 {
   text-align: center;
   padding: 10px;
 }
+
+.productosFestivos .previous {
+  color: #56381f;
+}
+
+.productosFestivos .next {
+  color: #56381f;
+}
+
 /*SERVICIO DE CATERING*/
 main {
+  background-image: -webkit-gradient(linear, right top, left top, from(white), to(#b17f48));
   background-image: linear-gradient(to left, white, #b17f48);
 }
+
 main .catering1 {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 700px;
 }
+
 main .servicio {
   text-align: center;
   padding: 8px;
   font-size: 40px;
   font-family: "Pacifico", cursive;
-  background-color: rgb(177, 127, 72);
+  background-color: #b17f48;
   color: white;
 }
+
 main .textoCatering {
   font-family: "Satisfy", cursive;
   font-size: x-large;
 }
+
 main .video {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   display: inline-block;
   margin: 20px;
@@ -316,52 +429,70 @@ main .video {
 .formulario {
   height: 500px;
 }
+
 .formulario .flex__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(white), to(#b17f48));
   background-image: linear-gradient(to right, white, #b17f48);
   padding: 15px;
 }
+
 .formulario .mensaje {
   text-align: center;
   padding: 8px;
   font-size: 40px;
   font-family: "Pacifico", cursive;
-  background-color: rgb(177, 127, 72);
+  background-color: #b17f48;
   color: white;
 }
+
 .formulario .form {
   width: 100%;
   height: 400px;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
+
 .formulario .form__input {
   width: 70%;
   margin: 7px;
   padding: 7px;
-  border: 5px solid rgb(177, 127, 72);
+  border: 5px solid #b17f48;
   background: transparent;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: medium;
 }
+
 .formulario #button {
   width: 160px;
   justify-items: center;
 }
+
 .formulario .form__input:focus {
-  background-color: rgb(177, 127, 72);
+  background-color: #b17f48;
   outline: none;
 }
+
 .formulario textarea {
   min-height: 100px;
   resize: none;
 }
+
 .formulario .imagenEmail {
   width: 370px;
   height: 370px;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding: 10px;
 }
 
@@ -405,11 +536,15 @@ main .video {
     padding: 10px;
   }
   .info .festivo {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
   .info .calendar {
     width: 90%;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .info .Cen {
     justify-items: center;
@@ -422,14 +557,20 @@ main .video {
   /* PRODUCTOS RESPONSIVE*/
   .conteinerGaleria {
     height: 1350px;
+    background-image: -webkit-gradient(linear, left top, right top, from(white), to(#b17f48));
     background-image: linear-gradient(to right, white, #b17f48);
   }
   .conteinerGaleria #galeria {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    grid-template-areas: "budines   cookies" "brownies1 cookies1" "brownies2 cookies2" "brownies3 cookies3" "panaderia facturas" "panificados 1 facturas 1" "panificados2 facturas2" "panificados3 facturas3" ".            salado" ".            salado1" ".            salado2" ".            salado3";
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[12];
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-areas: "budines   cookies" "brownies1 cookies1" "brownies2 cookies2" "brownies3 cookies3" "panaderia facturas" "panificados 1 facturas 1" "panificados2 facturas2" "panificados3 facturas3" ".            salado" ".            salado1" ".            salado2" ".            salado3";
   }
   .conteinerGaleria #galeria img {
     justify-items: center;
@@ -439,26 +580,38 @@ main .video {
   .conteinerGaleria #galeria .title1, .conteinerGaleria main #galeria .title2, main .conteinerGaleria #galeria .title2, .conteinerGaleria main #galeria .title3, main .conteinerGaleria #galeria .title3, .conteinerGaleria main #galeria .title4, main .conteinerGaleria #galeria .title4, .conteinerGaleria main #galeria .title5, main .conteinerGaleria #galeria .title5 {
     text-align: center;
     font-size: x-large;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: budines;
   }
   .conteinerGaleria #galeria .title2 {
     text-align: center;
     font-size: x-large;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
     grid-area: cookies;
   }
   .conteinerGaleria #galeria .title3 {
     text-align: center;
     font-size: x-large;
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
     grid-area: panaderia;
   }
   .conteinerGaleria #galeria .title4 {
     text-align: center;
     font-size: x-large;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
     grid-area: facturas;
   }
   .conteinerGaleria #galeria .title5 {
     text-align: center;
     font-size: x-large;
+    -ms-grid-row: 9;
+    -ms-grid-column: 2;
     grid-area: salado;
   }
   .conteinerGaleria #galeria .brownies {
@@ -474,23 +627,35 @@ main .video {
     margin-left: 22px;
   }
   .conteinerGaleria #galeria .brownies1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: brownies1;
   }
   .conteinerGaleria #galeria .brownies2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: brownies2;
   }
   .conteinerGaleria #galeria .brownies3 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
     grid-area: brownies3;
   }
   .conteinerGaleria #galeria .cookies1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
     grid-area: cookies1;
     margin: 5px;
   }
   .conteinerGaleria #galeria .cookies2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
     grid-area: cookies2;
     margin: 5px;
   }
   .conteinerGaleria #galeria .cookies3 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
     grid-area: cookies3;
     margin: 5px;
   }
@@ -499,10 +664,14 @@ main .video {
     margin: 5px;
   }
   .conteinerGaleria #galeria .panificados2 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
     grid-area: panificados2;
     margin: 5px;
   }
   .conteinerGaleria #galeria .panificados3 {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
     grid-area: panificados3;
     margin: 5px;
   }
@@ -511,22 +680,32 @@ main .video {
     margin: 5px;
   }
   .conteinerGaleria #galeria .facturas2 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 2;
     grid-area: facturas2;
     margin: 5px;
   }
   .conteinerGaleria #galeria .facturas3 {
+    -ms-grid-row: 8;
+    -ms-grid-column: 2;
     grid-area: facturas3;
     margin: 5px;
   }
   .conteinerGaleria #galeria .salado1 {
+    -ms-grid-row: 10;
+    -ms-grid-column: 2;
     grid-area: salado1;
     margin: 5px 0px 0px 25px;
   }
   .conteinerGaleria #galeria .salado2 {
+    -ms-grid-row: 11;
+    -ms-grid-column: 2;
     grid-area: salado2;
     margin: 5px 0px 0px 25px;
   }
   .conteinerGaleria #galeria .salado3 {
+    -ms-grid-row: 12;
+    -ms-grid-column: 2;
     grid-area: salado3;
     margin: 5px 0px 0px 25px;
   }
@@ -534,7 +713,7 @@ main .video {
   .productosFestivos {
     height: 1050px;
   }
-  .torta1, .pan1, .huevo {
+  .torta1, .huevo, .pan1 {
     height: 180px;
     width: 180px;
   }
@@ -547,7 +726,9 @@ main .video {
   }
   .video {
     width: 350px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   /*FORMULARIO DE CONTACTO*/
   .formulario {
@@ -560,13 +741,18 @@ main .video {
     text-align: center;
   }
   .emailContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .imagenEmail {
     width: 360px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
-
 /*# sourceMappingURL=estilos.css.map */

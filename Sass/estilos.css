@@ -382,6 +382,10 @@ main #galeria .salado3:hover {
   padding: 10px;
 }
 
+.productosFestivos span {
+  color: black;
+}
+
 /*SERVICIO DE CATERING*/
 main {
   background-image: -webkit-gradient(linear, right top, left top, from(white), to(#b17f48));

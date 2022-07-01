@@ -310,6 +310,9 @@ box-sizing: border-box;
 
         }
 
+            span{
+                color: black
+            }
         #carouselExampleControls2{
             @extend #carouselExampleControls;
         }
