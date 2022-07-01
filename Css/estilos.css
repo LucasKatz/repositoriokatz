@@ -382,12 +382,8 @@ main #galeria .salado3:hover {
   padding: 10px;
 }
 
-.productosFestivos .previous {
-  color: #56381f;
-}
-
-.productosFestivos .next {
-  color: #56381f;
+.productosFestivos span {
+  color: black;
 }
 
 /*SERVICIO DE CATERING*/
