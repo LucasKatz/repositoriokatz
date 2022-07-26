@@ -4,12 +4,13 @@ function saludar() {
 
 saludar ();
 
-let producto = prompt ("Ingresa el producto y te diré su precio (fin para ver el total).");
+let producto = prompt ("Ingresa el producto y te diré su precio. \n brownies con dulce de leche \n brownies con nuez \n magdalenas \n cookies de chocolate \n cookies con chips \n cookies surtidas \n pan de salvado \n trenza de pan sin semillas \n trenza de pan con semillas \n cañoncitos \n vigilantes \n medialunas \n calamares rellenos \n locro \n matambre \n torta personalizada \n huevo de pascua \n rosca de pascua \n pan dulce \n  (fin para ver el total).");
+console.log(producto.toLowerCase());
 let precio=0;
 
 function calcular(){
 
-while(producto!="fin"){
+while(productO!="fin"){
     switch(producto){
         case "brownies con dulce de leche":
             console.log("El brownie con dulce de leche sale $180");
@@ -83,7 +84,7 @@ while(producto!="fin"){
             console.log("La rosca de pascua sale $700");
             precio=precio+480;
             break;
-        case "pan Dulce":
+        case "pan dulce":
             console.log("el pan dulce sale $1200");
             precio=precio+1200;
             break;
