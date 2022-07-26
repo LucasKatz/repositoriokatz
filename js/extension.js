@@ -10,7 +10,7 @@ let precio=0;
 
 function calcular(){
 
-while(productO!="fin"){
+while(producto!="fin"){
     switch(producto){
         case "brownies con dulce de leche":
             console.log("El brownie con dulce de leche sale $180");
@@ -100,3 +100,5 @@ console.log("Total a pagar $"+precio);
 }
 
 calcular();
+
+
