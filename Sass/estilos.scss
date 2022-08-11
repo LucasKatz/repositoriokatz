@@ -106,6 +106,8 @@ box-sizing: border-box;
 /*PRODUCTOS - GALERIAS */
     main {
 
+        background-image: radial-gradient(circle at center, white 0,#b17f48 );
+
         .titleBar {
             height: 60px;
             background-color: $color2;
@@ -123,8 +125,10 @@ box-sizing: border-box;
 
         #galeria{
             display: flex;
+            flex-wrap: wrap;
             padding-bottom: 25px;
-            height: 650px;
+            height: 1850px;
+            justify-content: center;
 
             .title1{
                 text-align: center;
@@ -153,128 +157,23 @@ box-sizing: border-box;
                 height: 180px;
             }
 
-
-            .brownies1{
-                margin: 5px;
+            .card {
+                align-items: center;
+                padding: 5px;
+                margin: 10px;
+                background-image:linear-gradient(to right,white, #b17f48);
             }
-
-            .brownies1:hover {
-                transform: scale(1.2);
-            }
-
-            .brownies2 {
-                margin: 5px;
-            }
-
-            .brownies2:hover {
-                transform: scale(1.2);
-            }
-
-            .brownies3{
-                margin: 5px;
-            }
-
-            .brownies3:hover {
-                transform: scale(1.2);
-            }
-
-            .cookies1{
-                margin: 5px;
-            }
-
-            .cookies1:hover {
-                transform: scale(1.2);
-            }
-
-            .cookies2 {
-                margin: 5px;
-            }
-
-            .cookies2:hover {
-                transform: scale(1.2);
-            }
-
-            .cookies3{
-                margin: 5px;
-            }
-
-            .cookies3:hover {
-                transform: scale(1.2);
-            }
-
-            .panificados1{
-                margin: 5px;
-            }
-
-            .panificados1:hover {
-                transform: scale(1.2);
-            }
-
-            .panificados2{
-                margin: 5px;
-            }
-
-            .panificados2:hover {
-                transform: scale(1.2);
-            }
-
-            .panificados3{
-                margin: 5px;
-            }
-
-            .panificados3:hover {
-                transform: scale(1.2);
-            }
-
-            .facturas1{
-                margin: 5px;
-            }
-
-            .facturas1:hover {
-                transform: scale(1.2);
-            }
-
-            .facturas2{
-                margin: 5px;
-            }
-
-            .facturas2:hover {
-                transform: scale(1.2);
-            }
-
-            .facturas3{
-                margin: 5px;
-            }
-
-            .facturas3:hover {
-                transform: scale(1.2);
-            }
-
-            .salado1{
-                margin: 5px;
-            }
-
-            .salado1:hover {
-                transform: scale(1.2);
-            }
-
-            .salado2{
-                margin: 5px;
-            }
-
-            .salado2:hover {
-                transform: scale(1.2);
-            }
-
-            .salado3{
-                margin: 5px;
-            }
-
-            .salado3:hover {
-                transform: scale(1.2);
-            }
-        }
     }
+    .fin{
+        text-align: center;
+        margin-left: 45%;
+        border-style: solid;
+        margin-bottom: 10px;
+        background-color: rgb(27, 27, 206);
+        color: white;
+        font-size: larger;
+    }
+}
 
     /*FESTIVIDADES - INFORMACIÓN GENERAL */
 
